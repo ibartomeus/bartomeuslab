@@ -1,0 +1,187 @@
+---
+title: "Publications"
+output: html_document
+---
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(scholar)
+#get_num_distinct_journals("EXdyoWAAAAAJ")
+#get_num_top_journals("EXdyoWAAAAAJ")
+ib <- get_profile("EXdyoWAAAAAJ")
+pubs <- get_publications("EXdyoWAAAAAJ", cstart = 0, pagesize = 100, flush = FALSE)
+#str(pubs)
+#I may want to retrive ORCIR with rorcid if I update my profile there.
+#Publons API can be called too
+offset <- 9 #articles in Gscholar not peer reviewed.
+```
+
+
+I published `r get_num_articles("EXdyoWAAAAAJ")-offset` scientific papers, which were cited more than `r ib$total_cites` times (H-index = `r ib$h_index`). 
+
+
+#Publications under review or in preparation
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+#Notes:
+#peerJ top10: https://peerj.com/collections/28-agricultural-science-papers-nov-15/
+#Add papers in F1000!Gagic, Sol...
+#Make sure to highlight mentoring and role of some papers?
+#colnames(pubs) <- NULL
+#pubs <- get_publications("EXdyoWAAAAAJ", cstart = 0, pagesize = 100, flush = FALSE)
+#str(pubs)
+#head(pubs)
+pubs <- pubs[,c(-7, - 8)]
+pubs <- pubs[order(pubs$year, decreasing = TRUE),]
+#unique(pubs$journal)
+pubs_preprints <- subset(pubs, journal %in% c("PeerJ Preprints", "bioRxiv")) 
+pubs_non_peerr <- subset(pubs, journal %in% c("", "Quercus", "Invasiones Biológicas, Madrid, CSIC, MCI, Gobierno de España", "Pensoft Publishers", "USDA Technical Bulletin", "Ecosistemas", "Biological Invasions and Animal Behaviour", "Bruker Micro-CT Users Meeting")) 
+pubs <- subset(pubs, !journal %in% c("", "Quercus", "Invasiones Biológicas, Madrid, CSIC, MCI, Gobierno de España", "Pensoft Publishers", "USDA Technical Bulletin", "PeerJ Preprints", "bioRxiv", "Ecosistemas", "Biological Invasions and Animal Behaviour", "Bruker Micro-CT Users Meeting"))
+levels(pubs$journal)[which(levels(pubs$journal) == "science")] <- "Science"
+levels(pubs$journal)[which(levels(pubs$journal) == "F")] <- "F1000 Research"
+levels(pubs$journal)[which(levels(pubs$journal) == "Proceedings of the Royal Society B: Biological Sciences")] <- "Proceedings of the Royal Society of London B: Biological Sciences"
+pubs_preprints$journal <- paste(pubs_preprints$journal, pubs_preprints$number)
+pubs_preprints <- pubs_preprints[,-4]
+pubs_preprints <- pubs_preprints[,c(1:2,3)]
+colnames(pubs_preprints) <- c("Title", "Authors", "Pre-print")
+rownames(pubs_preprints) <- NULL
+knitr::kable(pubs_preprints, format = "html", align = "l")
+#pander::pandoc.table(pubs_preprints, split.table = Inf, split.cells = 100, justify = "left")
+#remove peerJ/ROC
+#Add Magrach, Sol, Winsa, Magrach, Collado, Stavert  
+```
+
+
+#Publications
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+pubs$journal <- paste(pubs$journal, pubs$number)
+pubs <- pubs[,-4]
+pubs <- pubs[,c(1:3,5,4)]
+colnames(pubs) <- c("Title", "Authors", "Journal", "Year", "Citations")
+rownames(pubs) <- NULL
+knitr::kable(pubs, format = "html", align = "l")
+#pander::pandoc.table(pubs, split.table = Inf, split.cells = 100, justify = "left")
+#Add in review??
+#todo: highlight my name
+```
+
+
+#Other publications:
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+pubs_non_peerr$journal <- paste(pubs_non_peerr$journal, pubs_non_peerr$number)
+pubs_non_peerr <- pubs_non_peerr[,-4]
+pubs_non_peerr <- pubs_non_peerr[,c(1:3,5)]
+colnames(pubs_non_peerr) <- c("Title", "Authors", "Published in", "Year")
+rownames(pubs_non_peerr) <- NULL
+knitr::kable(pubs_non_peerr, format = "html", align = "l")
+#pander::pandoc.table(pubs_non_peerr, split.table = Inf, split.cells = 100, justify = "left")
+#Add book chapter!
+```
+
+
+#Network of coauthors:
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+#library("devtools")
+#install_github("pablobarbera/scholarnetwork")
+
+library(scholarnetwork)
+d <- extractNetwork(id="EXdyoWAAAAAJ", n=5000)
+#str(d)
+#plotNetwork(d$nodes, d$edges, file="network.html")
+#head(d)
+
+#other options
+library(ggplot2)
+library(igraph)
+# cleaning network data
+network <- graph_from_data_frame(d$edges, directed=FALSE)
+
+#detour
+#plot(network)
+net <- simplify(network, remove.multiple = F, remove.loops = T) 
+#plot(net, edge.arrow.size=.4,vertex.label=NA)
+
+ids <- V(net)
+#str(ids)
+#names(ids)
+gr <- merge(data.frame(names(ids), label = names(ids)), d$nodes, sort = FALSE)
+colrs <- 1:max(gr$group)
+V(net)$color <- colrs[gr$group]
+
+# Compute node degrees (#links) and use that to set node size:
+deg <- degree(net, mode="all")
+V(net)$size <- deg*0.7
+#max(V(net)$size)
+V(net)$size[1] <- 22
+# We could also use the audience size value:
+#V(net)$size <- V(net)$audience.size*0.6
+
+# The labels are currently node IDs.
+# Setting them to NA will render no labels:
+V(net)$label <- NA
+#V(net)$label
+
+# Set edge width based on weight:
+E(net)$width <- E(net)$weight
+
+#change arrow size and edge color:
+E(net)$arrow.size <- .2
+E(net)$edge.color <- "gray80"
+E(net)$width <- 1+E(net)$weight
+#plot(net) 
+
+l <- layout.fruchterman.reingold(network, niter=1500) # layout
+fc <- walktrap.community(network) # community detection
+
+# node locations
+nodes <- data.frame(l); names(nodes) <- c("x", "y")
+nodes$cluster <- factor(fc$membership)
+nodes$label <- fc$names
+nodes$degree <- degree(network)
+
+# edge locations
+edgelist <- get.edgelist(network, names=FALSE)
+edges <- data.frame(nodes[edgelist[,1],c("x", "y")], nodes[edgelist[,2],c("x", "y")])
+names(edges) <- c("x1", "y1", "x2", "y2")
+plot(net)  #good for estatic ntw
+
+# # and now visualizing it...
+# library(ggplot2)
+# p <- ggplot(nodes, aes(x=x, y=y, color=cluster, label=label, size=degree))
+# pq <- p + geom_text(color="black", aes(label=label, size=degree),
+#                     show_guide=FALSE) +
+#   # nodes
+#   geom_point(color="grey20", aes(fill=cluster),
+#              shape=21, show_guide=FALSE, alpha=1/2) +
+#   # edges
+#   geom_segment(
+#     aes(x=x1, y=y1, xend=x2, yend=y2, label=NA),
+#     data=edges, size=0.25, color="grey20", alpha=1/5) +
+#   ## note that here I add a border to the points
+#   scale_fill_discrete(labels=labels) +
+#   scale_size_continuous(range = c(5, 8)) +
+#   theme(
+#     panel.background = element_rect(fill = "white"),
+#     plot.background = element_rect(fill="white"),
+#     axis.line = element_blank(), axis.text = element_blank(),
+#     axis.ticks = element_blank(),
+#     axis.title = element_blank(), panel.border = element_blank(),
+#     panel.grid.major = element_blank(),
+#     panel.grid.minor = element_blank(),
+#     legend.background = element_rect(colour = F, fill = "black"),
+#     legend.key = element_rect(fill = "black", colour = F),
+#     legend.title = element_text(color="white"),
+#     legend.text = element_text(color="white")
+#   ) +
+#   ## changing size of points in legend
+#   guides(fill = guide_legend(override.aes = list(size=5)))
+# 
+# pq
+```
+
