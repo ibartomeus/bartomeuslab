@@ -1,0 +1,26 @@
+name: "Bartomeuslab"                                  
+output_dir: "."
+navbar:
+  title: "Bartomeus lab"                                
+  type: inverse
+  left:
+    - text: "Main webpage"
+      icon: fa-home 
+      href: http://www.bartomeuslab.com
+    - text: "Publications"
+      icon: fa-file-pdf-o 
+      href: publications.html
+    - text: "Beefun"
+      icon: fa-info
+      href: beefun.html
+  right:
+    - text: "Contact me"
+      icon: fa-envelope-o
+      href: mailto:nacho.bartomeus@gmail.com                     
+    - text: "GitHub"
+      icon: fa-github
+      href: https://github.com/ibartomeus     
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
