@@ -5,7 +5,6 @@ editor_options:
   chunk_output_type: console
 ---
   
-## Projects
 
 - [BeeFun](beefun.html) : Pollinator responses to global change and its implications for ecosystem function - Marie Curie Actions – FP7-PEOPLE-2013-CIG (PCIG14-GA-2013-631653). 2014-2018.  
 
