@@ -1,15 +1,18 @@
 ---
 title: "BeeFun"
 output: html_document
+editor_options: 
+  chunk_output_type: console
 ---
 
-### Pollinator responses to global change and its implications for ecosystem function 
+## Pollinator responses to global change and its implications for ecosystem function  
+**PCIG14-GA-2013-631653**
 
-The BeeFun project provided funding to start-up the Bartomeus lab and has two differenciated parts. First, BeeFun aims to use existing data to advance our basic understanding on how pollintors respond to global change and its implications for ecosystem functioning. Second, BeeFun allowed us to start an ambitious long-term monitoring program to follow plant-pollinator networks across an environmental gradient and along a temporal sequence. 
+The BeeFun project provided funding to start-up the [Bartomeus lab](http://www.bartomeuslab.com) and has two differenciated parts. First, *BeeFun* aims to use existing data to advance our basic understanding on how pollintors respond to global change and its implications for ecosystem functioning. Second, *BeeFun* allowed us to start an ambitious long-term monitoring program to follow plant-pollinator networks across an environmental gradient and along a temporal sequence. 
 
 Below you can find the main results so far:
     
-### Empirical results:
+## Empirical results:
 
 Part of the project implies collecting plant-pollinator networks along a land use change gradient. 
 
@@ -24,15 +27,21 @@ sites$name <- as.character(sites$Siye_ID)
 map_leaflet(x = sites[,-1])
 ```
 
-
 You can play with the network here:
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 data(all_interactions)
 #head(all_interactions)
+#make it lighter
+library(reshape2)
+d <- dcast(data = all_interactions[,c(3,4,8)], formula = Plant_gen_sp + Pollinator_gen_sp ~ ., 
+           fun.aggregate = sum, value.var = "Frequency")
+#head(d)
+colnames(d)[3] <- "Frequency"
+#dim(all_interactions[,c(3,4,8)]) ; dim(d)
 library(igraph)
 # cleaning network data
-network <- graph_from_data_frame(all_interactions[,c(3,4,8)], directed=FALSE)
+network <- graph_from_data_frame(d, directed=FALSE)
 
 l <- layout.fruchterman.reingold(network, niter=1500) # layout
 fc <- walktrap.community(network) # community detection
@@ -52,7 +61,7 @@ nodes$attribute <- as.character(nodes$cluster)
 nodes$title <- nodes$id # Text on click
 #nodes$id
 nodes$label <- nodes$type # Node label
-net <- simplify(network, remove.multiple = F, remove.loops = T) 
+net <- simplify(network, remove.multiple = T, remove.loops = T) 
 deg <- degree(net, mode="all")
 nodes$size <- sqrt(deg)*2 # Node size
 nodes$borderWidth <- 0.2 # Node border width
@@ -60,7 +69,7 @@ nodes$borderWidth <- 0.2 # Node border width
 nodes$color.border <- "black"
 nodes$color.highlight.background <- "orange"
 nodes$color.highlight.border <- "darkred"
-links <- all_interactions[,c(3,4,8)]
+links <- d
 links <- subset(links, Plant_gen_sp != "NA NA")
 links$width <- sqrt(links$Frequency) # line width
 links$color <- "gray"    # line color  
@@ -79,8 +88,8 @@ nodes$type <- c(rep("plant", 56), rep("pol",331-56)) #run after pruning!!
 nodes$color.background <- c(rep("red", 56), rep("black",331-56)) #run after pruning!!
 #plot
 v <- visNetwork(nodes, links)
-vv <- visPhysics(v, timestep = 0.15)
-vv
+vv <- visPhysics(v, timestep = 0.05, stabilization = FALSE)
+visIgraphLayout(vv)
 #visSave(vv, "ntw.html", selfcontained = T)
 ```   
 
@@ -90,24 +99,34 @@ We are following this networks along the years, and you can see below pollinator
 knitr::include_graphics("https://ibartomeus.files.wordpress.com/2017/08/rplot.png?w=584")
 ```
 
-We are still working in publishing this results.
+We are still working in publishing these results.
 
-**Papers using this data:**  
-[1] Desjardins, Bartomeus, Poisot, Gravel 2018. Submitted.  
+**Papers using this data:**
+
+[1] Magrach, Molina, Bartomeus. In prep.   
+[2] Desjardins, Bartomeus, Poisot, Gravel. Submitted.   
+[3] Botias, Gomez-Diaz, Molina, Bartomeus. In prep.   
+[4] Rodriguez-Sanchez, Molina, Bartomeus. In prep.   
  
-### Synthesis results:  
+## Synthesis results:  
     
+The second objective of the project is to use existing data to test the *Biodiversity Ecosystem Funcioning* theory. In this regards we made important contributions relating trait-based ecology to ecosystem functions.    
 
 **Papers published:**  
-[1] Bartomeus et al. 2017 Oikos  
-[2] Stavert et al. 2017 Proc B  
+5- [Bartomeus et al. 2017 Oikos](https://onlinelibrary.wiley.com/doi/full/10.1111/oik.04507)    
+6- [Stavert, Pattemore, Gaskett, Beggs, Bartomeus. 2017 Proc B](http://rspb.royalsocietypublishing.org/content/284/1860/20170788)    
+7- Stavert, Bartomeus  
+
+**Thesis supported**
+The thesis of Jamie Stavert was conducted in the framework of BeeFun project.
 
 ### Unexpected outputs:  
   
-All projects deliver unexpected outputs. In this case, we needed to measure bee hairiness as a proxy of its efficiency, which we successfully achieved!      
+All projects deliver unexpected outputs. In this case, we needed to measure bee hairiness as a proxy of its efficiency, which we successfully achieved! 
+
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 knitr::include_graphics("https://dfzljdn9uc3pi.cloudfront.net/2016/2779/1/fig-1-2x.jpg")
 ```
 
 **Papers published:**  
-[1] Stavert et al 2016 PeerJ
+8. Stavert et al 2016 PeerJ

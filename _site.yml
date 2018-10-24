@@ -7,9 +7,9 @@ navbar:
     - text: "Main webpage"
       icon: fa-home 
       href: http://www.bartomeuslab.com
-    - text: "Publications"
+    - text: "Projects"
       icon: fa-file-pdf-o 
-      href: publications.html
+      href: index.html
     - text: "Beefun"
       icon: fa-info
       href: beefun.html
