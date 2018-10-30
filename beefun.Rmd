@@ -1,12 +1,13 @@
 ---
-title: "BeeFun"
+title: "BeeFun:"
 output: html_document
 editor_options: 
   chunk_output_type: console
 ---
 
 ## Pollinator responses to global change and its implications for ecosystem function  
-**PCIG14-GA-2013-631653**
+**Marie Curie CIG action** PCIG14-GA-2013-631653  
+**Researcher: Ignasi Bartomeus**; Host: Montserrat Vilà
 
 The BeeFun project provided funding to start-up the [Bartomeus lab](http://www.bartomeuslab.com) and has two differenciated parts. First, *BeeFun* aims to use existing data to advance our basic understanding on how pollintors respond to global change and its implications for ecosystem functioning. Second, *BeeFun* allowed us to start an ambitious long-term monitoring program to follow plant-pollinator networks across an environmental gradient and along a temporal sequence. 
 
@@ -23,7 +24,7 @@ library(BeeFunData)
 data(sites)
 #head(sites)
 library(mapr)
-sites$name <- as.character(sites$Siye_ID)
+sites$name <- as.character(sites$Site_ID)
 map_leaflet(x = sites[,-1])
 ```
 
@@ -101,24 +102,31 @@ knitr::include_graphics("https://ibartomeus.files.wordpress.com/2017/08/rplot.pn
 
 We are still working in publishing these results.
 
-**Papers using this data:**
-
-[1] Magrach, Molina, Bartomeus. In prep.   
-[2] Desjardins, Bartomeus, Poisot, Gravel. Submitted.   
-[3] Botias, Gomez-Diaz, Molina, Bartomeus. In prep.   
-[4] Rodriguez-Sanchez, Molina, Bartomeus. In prep.   
+**Papers using this data: **  
+1- Magrach, Molina, **Bartomeus**. Network structure effects on plant functioning. In prep.   
+2- Desjardins, **Bartomeus**, Poisot, Gravel. A simple algorithm to effectively predict ecological interactions. In prep.   
+3- Botias, Gomez-Diaz, Molina, **Bartomeus**. Understanding the plant-pollintor-pathogen network. In prep.   
+4- Rodriguez-Sanchez, Molina, **Bartomeus** Forecasting the dynamics of mutualistic networks with environmental change. In prep.   
  
 ## Synthesis results:  
     
-The second objective of the project is to use existing data to test the *Biodiversity Ecosystem Funcioning* theory. In this regards we made important contributions relating trait-based ecology to ecosystem functions.    
+The second objective of the project is to use existing data to test the *Biodiversity Ecosystem Funcioning* theory. In this regards we showed the inconsistency of trait-based ecology to predict ecosystem functions [5]. However, we found that the relationship between response diversity and functional redundancy is a key mediator of cosystem functioning [Figure below; 6] and identified species evenness [10] and invasive species [7], as drivers that we need to take into account when assessing ecosystem functioning.      
+
+```{r, echo=FALSE, out.width = "100%", out.height = "100%", message=FALSE, warning=FALSE}
+knitr::include_graphics("media/Stavert2017.png")
+```
 
 **Papers published:**  
-5- [Bartomeus et al. 2017 Oikos](https://onlinelibrary.wiley.com/doi/full/10.1111/oik.04507)    
-6- [Stavert, Pattemore, Gaskett, Beggs, Bartomeus. 2017 Proc B](http://rspb.royalsocietypublishing.org/content/284/1860/20170788)    
-7- Stavert, Bartomeus  
+5- **Bartomeus** et al. 2017 On the inconsistency of pollinator species traits for predicting either response to land‐use change or functional contribution. [Oikos 127: 306-315](https://onlinelibrary.wiley.com/doi/full/10.1111/oik.04507)    
+6- Stavert, Pattemore, Gaskett, Beggs, **Bartomeus** 2017. Exotic species enhance response diversity to land-use change but modify functional composition. [Proc. R. Soc. B 284 (1860), 20170788](http://rspb.royalsocietypublishing.org/content/284/1860/20170788)    
+7- Stavert, Pattemore, **Bartomeus**, Gaskett, Beggs. EExotic flies maintain pollination services as native pollinators decline with agricultural expansion. [Journal of Applied Ecology 55 (4), 1737-1746](https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/1365-2664.13103)  
+8- Coux, Rader, **Bartomeus**, Tylianakis. Linking species functional roles to their network roles. 2016 [Ecology letters 19 (7), 762-770](https://onlinelibrary.wiley.com/doi/abs/10.1111/ele.12612)   
+9- Rader, **Bartomeus** et al. Non-bee insects are important contributors to global crop pollination. 2016 [Proceedings of the National Academy of Sciences 113 (1), 146-151](http://www.pnas.org/content/113/1/146.short)   
+10- Stavert, **Bartomeus**, Beggs, Gasket, Pattermore. Species evenness increases pollinator sharing and reduces plant reproduction. In review.  
+11- **Bartomeus** and Dicks. The need for coordinated transdisciplinary research infrastructures for pollinator conservation and crop pollination resilience. [In review.](https://peerj.com/preprints/26898)   
+12- Kendall, ..., **Bartomeus**. Pollinator size and its consequences: Predictive allometry for pollinating insects. [In review.](https://www.biorxiv.org/content/early/2018/08/22/397604.abstract)   
 
-**Thesis supported**
-The thesis of Jamie Stavert was conducted in the framework of BeeFun project.
+**Thesis supported:** The thesis of Jamie Stavert was conducted in the framework of BeeFun project.
 
 ### Unexpected outputs:  
   
@@ -129,4 +137,5 @@ knitr::include_graphics("https://dfzljdn9uc3pi.cloudfront.net/2016/2779/1/fig-1-
 ```
 
 **Papers published:**  
-8. Stavert et al 2016 PeerJ
+13. Stavert, Liñán-Cembrano, Beggs, Howlett, Pattemore, **Bartomeus** 2016 Hairiness: the missing link between pollinators and pollination [PeerJ 4, e2779](https://peerj.com/articles/2779)  
+14. Hill and **Bartomeus**. 2016. The potential of electricity transmission corridors in forested areas as bumblebee habitat. [Royal Society open science 3 (11), 160525](http://rsos.royalsocietypublishing.org/content/3/11/160525.abstract)  
