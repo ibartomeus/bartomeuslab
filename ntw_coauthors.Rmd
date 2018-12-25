@@ -137,11 +137,12 @@ colnames(links)[1:2] <- c("from", "to")
 #cols
 #dim(nodes)
 nodes$type <- nodes$cluster
-map2color<-function(x,pal,limits=NULL){
+map2color<-function(x, pal=NULL, limits=NULL){
   if(is.null(limits)) limits=range(x)
+  if(is.null(pal)) pal = rainbow(max(x))
   pal[findInterval(x,seq(limits[1],limits[2],length.out=length(pal)+1), all.inside=TRUE)]
 }
-nodes$color.background <- map2color(as.numeric(nodes$cluster), pal = rainbow(200), limits=c(1,10))
+nodes$color.background <- map2color(as.numeric(nodes$cluster))
 #plot
 v <- visNetwork(nodes, links)
 visIgraphLayout(v)
