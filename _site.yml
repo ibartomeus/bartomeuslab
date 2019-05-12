@@ -1,19 +1,19 @@
-name: "Bartomeuslab"                                  
+name: "Bartomeuslabprojects"                                  
 output_dir: "."
 navbar:
-  title: "Bartomeus lab"                                
+  title: "All Projects"                                
   type: inverse
   left:
-    - text: "Main webpage"
-      icon: fa-home 
-      href: http://www.bartomeuslab.com
-    - text: "Projects"
-      icon: fa-file-pdf-o 
-      href: index.html
     - text: "Beefun"
       icon: fa-info
       href: beefun.html
+    - text: "OBServ"
+      icon: fa-info
+      href: observ.html
   right:
+    - text: "Bartomeus lab"
+      icon: fa-home 
+      href: http://www.bartomeuslab.com
     - text: "Contact me"
       icon: fa-envelope-o
       href: mailto:nacho.bartomeus@gmail.com                     

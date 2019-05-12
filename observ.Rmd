@@ -1,0 +1,23 @@
+---
+title: "OBServ:"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+## Open library of pollinator Biodiversity and ecosystem Services scenarios  
+**Belmont Forum-BiodivERsA** 
+**Coordinator: Ignasi Bartomeus**
+
+The OBServ project ...  [comming soon]()
+
+# The Team:
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(mapr)
+partners <- data.frame(Partner = c(), lat = c(), long= c())
+#map_leaflet(x = partners)
+```
+
+**Papers published**  
+1- Bartomeus & Dicks 2019. 
