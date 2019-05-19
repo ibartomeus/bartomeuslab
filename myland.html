@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Myland</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.2/htmlwidgets.js"></script>
+<link href="site_libs/vis-4.20.0/vis.css" rel="stylesheet" />
+<script src="site_libs/vis-4.20.0/vis.min.js"></script>
+<script src="site_libs/visNetwork-binding-2.0.1/visNetwork.js"></script>
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">All Projects</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="beefun.html">
+    <span class="fa fa-info"></span>
+     
+    Beefun
+  </a>
+</li>
+<li>
+  <a href="observ.html">
+    <span class="fa fa-info"></span>
+     
+    OBServ
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="http://www.bartomeuslab.com">
+    <span class="fa fa-home"></span>
+     
+    Bartomeus lab
+  </a>
+</li>
+<li>
+  <a href="mailto:nacho.bartomeus@gmail.com">
+    <span class="fa fa-envelope-o"></span>
+     
+    Contact me
+  </a>
+</li>
+<li>
+  <a href="https://github.com/ibartomeus">
+    <span class="fa fa-github"></span>
+     
+    GitHub
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Myland</h1>
+
+</div>
+
+
+<p>This is a temptative network of how our activities map onto ur principles.</p>
+<div id="htmlwidget-b552a56b9bcfe98005b4" style="width:672px;height:480px;" class="visNetwork html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b552a56b9bcfe98005b4">{"x":{"nodes":{"x":[-0.380823461973694,0.533307318474365,0.258624618246461,0.00397851841612917,0.074295621497239,-0.195561555718795,-0.274268132308259,0.846925243049534,-0.733184263414015,0.52812764113072,-0.618129760232558,-0.125935155380661,0.0237837775296861,-0.307723673123013,-0.55078627318275,-0.559499703308214,-0.360249194433304,-0.611896757912511,-0.486986622005692,-0.366488690970821,-0.442697734512105,0.774058383899489,0.662530818821747,0.289985234582881,0.564122122987261,0.258417036873835,0.748909418481732,0.337270421982656,0.806975497603129,0.729174593104934,0.689125647524466,0.787894627535367,0.686756383917006,0.68343721799761,0.59966100767801,0.425562453595846,0.314578491767506,0.382983316664093,0.251260631580679,0.100479199385898,0.141684274438305,-0.00873258833909962,0.0843164134092598,-0.111821326784578,0.273735124298432,-0.384250358613191,0.0956091306679685,0.0109295014819892,0.156404580857296,-0.333427606541557,-0.198571706691279,-0.263056852006911,-0.504631515591651,-0.366436062500032,-0.552656692917001,-0.285915967393577,0.737278352026987,0.912188495194767,0.686574708772626,1,-0.918882663072319,-0.913230301076697,-0.922043584612142,-0.97463534612165,-0.858733196669949,-0.979892579164493,-1,0.753297199194828,0.547276474952169,0.673562220958543,0.457858163892415,0.41858864980895,0.731347947571875,0.562440957628059,0.663160715539038],"y":[0.597820889941828,0.420746426967325,0.779083841323776,0.273681111826249,0.688402011859311,0.120965461224549,0.572292236220463,-0.819658916319372,0.227373797208388,-0.363682395872568,0.716031681486063,0.532117968117571,0.485936574842551,0.364117550397625,0.685935840530569,0.783096053453119,0.307838300021072,0.625057353756949,0.76690970812179,0.692580665460758,0.821892826244371,0.544311536716733,0.296064070790616,0.337409660019092,0.0187289602239393,0.497385123716023,0.319780247915717,0.598145055404734,0.458879701782146,0.472788148632099,0.395759771497338,0.385527336041131,0.606926840611267,0.53697140189285,0.583221284963683,0.917945824036792,0.96048898700497,0.984872720823552,1,0.326293992245637,0.2027012804268,0.117912227381426,0.130397195801384,0.17491942331928,-0.0591116964382522,0.231063951193091,0.881708367540534,0.88204406444193,-0.152476869532818,-0.0673357464657389,-0.0821122212821208,-0.0417640897694388,0.131958004953964,0.0067224148658922,0.421022705241326,0.77327604308178,-0.612712282880596,-1,-0.640340427408221,-0.95184011216978,0.102231536992527,0.203687312184105,0.333299077746822,0.28301934993216,0.0626626552294292,0.140235338224824,0.21522749185943,-0.441887333329658,-0.573710089304444,-0.421643890494017,-0.557788362125278,-0.492538002793528,-0.350355602432454,-0.50165644516969,-0.507002310454233],"cluster":["8","7","10","4","6","5","1","2","9","3","8","1","1","5","8","8","4","8","8","1","8","7","7","4","3","4","7","6","7","7","7","7","7","7","7","10","10","10","10","4","4","4","4","5","4","4","6","6","5","5","5","5","5","5","1","1","2","2","2","2","9","9","9","9","9","9","9","3","3","3","3","3","3","3","3"],"id":["1. LEARNING GOALS","2. DIMENSIONS OF LEARNING","3. ASSESSMENT FOR, OF AND AS LEARNING","4. LEARNING PERSPECTIVES","5. Culture of learning","6. Research and reflection","7. Inclusiveness of learning","8. Gobernance and leadership","9. Learning space and time","10. Learning community","The cell (Jazmin)","Brainstorming - Global warming - Women's day","Personal projects","Portafolio making","Self-organizing e.g. \"caba<a4>as\"","Team-work","Crop garden - Compost","Bee-friandly school project","99 questions 99 proposals","Women scientists project","Role-playng (Ane)","free play (juego libre)","Stop-motion films (Ale)","Art workshop","Community working days to fix the school","Montesori material","Active learning material","Bank","Football game cards","Music band","Gymnastics offered by Jazmin class","Communal breakfasts","Students feed-back loop from projects ","Christmas carol","Art from recycled stuff.","School reports for parents","Students diaries","Rubric cards","Peer assessment","Mind-fulness & Yoga","Harry potter magic wands co-creation","Meeting-time shared experiences","The garden pond","Science fair","In-school activities (police dog - insects - Ambulance)","Students mobility across clases","self-organizing e.g. \"caba<a4>as\"","Fixing broken things","In-school workshops (networks - Azulejos)","Observation table","Experimenting new teaching methods (e.g. Curso puente)","Failure as a key ingredient of research","Free play (juego libre)","Show and tell","Free configuration of clasrooms","Breakfast time","Monthly family meetings","Weekly pedagogic team meetings","Class Dojo","Organigram","Multi-age classes","School yard heterogeneity","Atelier","Pre-historic cave building + expedition","Football - team games","Movement room","Caza del oso","Adaptation period","Whishlist","Grants (linea becas - desayunos solidarios)","A night at school","Whatsupp group","AMPA","Webpage","Daily pick-up conversation time"],"degree":[11,15,6,12,5,10,5,4,11,13,1,4,7,2,1,1,4,1,1,2,1,1,1,2,2,3,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,1,1,2,1,1,1,2,1,2,1,2,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"shape":["dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot"],"shadow":[true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true],"attribute":["8","7","10","4","6","5","1","2","9","3","8","1","1","5","8","8","4","8","8","1","8","7","7","4","3","4","7","6","7","7","7","7","7","7","7","10","10","10","10","4","4","4","4","5","4","4","6","6","5","5","5","5","5","5","1","1","2","2","2","2","9","9","9","9","9","9","9","3","3","3","3","3","3","3","3"],"title":["1. LEARNING GOALS","2. DIMENSIONS OF LEARNING","3. ASSESSMENT FOR, OF AND AS LEARNING","4. LEARNING PERSPECTIVES","5. Culture of learning","6. Research and reflection","7. Inclusiveness of learning","8. Gobernance and leadership","9. Learning space and time","10. Learning community","The cell (Jazmin)","Brainstorming - Global warming - Women's day","Personal projects","Portafolio making","Self-organizing e.g. \"caba<a4>as\"","Team-work","Crop garden - Compost","Bee-friandly school project","99 questions 99 proposals","Women scientists project","Role-playng (Ane)","free play (juego libre)","Stop-motion films (Ale)","Art workshop","Community working days to fix the school","Montesori material","Active learning material","Bank","Football game cards","Music band","Gymnastics offered by Jazmin class","Communal breakfasts","Students feed-back loop from projects ","Christmas carol","Art from recycled stuff.","School reports for parents","Students diaries","Rubric cards","Peer assessment","Mind-fulness & Yoga","Harry potter magic wands co-creation","Meeting-time shared experiences","The garden pond","Science fair","In-school activities (police dog - insects - Ambulance)","Students mobility across clases","self-organizing e.g. \"caba<a4>as\"","Fixing broken things","In-school workshops (networks - Azulejos)","Observation table","Experimenting new teaching methods (e.g. Curso puente)","Failure as a key ingredient of research","Free play (juego libre)","Show and tell","Free configuration of clasrooms","Breakfast time","Monthly family meetings","Weekly pedagogic team meetings","Class Dojo","Organigram","Multi-age classes","School yard heterogeneity","Atelier","Pre-historic cave building + expedition","Football - team games","Movement room","Caza del oso","Adaptation period","Whishlist","Grants (linea becas - desayunos solidarios)","A night at school","Whatsupp group","AMPA","Webpage","Daily pick-up conversation time"],"size":[50,38.7298334620742,24.4948974278318,34.6410161513775,22.3606797749979,31.6227766016838,22.3606797749979,20,33.166247903554,36.0555127546399,10,20,26.4575131106459,14.142135623731,10,10,20,10,10,14.142135623731,10,10,10,14.142135623731,14.142135623731,17.3205080756888,10,14.142135623731,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,14.142135623731,14.142135623731,14.142135623731,10,10,14.142135623731,10,10,10,14.142135623731,10,14.142135623731,10,14.142135623731,10,14.142135623731,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10],"borderWidth":[0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2],"color.border":["black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black"],"color.highlight.background":["orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange"],"color.highlight.border":["darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred"],"type":["8","7","10","4","6","5","1","2","9","3","8","1","1","5","8","8","4","8","8","1","8","7","7","4","3","4","7","6","7","7","7","7","7","7","7","10","10","10","10","4","4","4","4","5","4","4","6","6","5","5","5","5","5","5","1","1","2","2","2","2","9","9","9","9","9","9","9","3","3","3","3","3","3","3","3"],"color.background":["#3300FFFF","#0066FFFF","#FF0099FF","#33FF00FF","#00FFFFFF","#00FF66FF","#FF0000FF","#FF9900FF","#CC00FFFF","#CCFF00FF","#3300FFFF","#FF0000FF","#FF0000FF","#00FF66FF","#3300FFFF","#3300FFFF","#33FF00FF","#3300FFFF","#3300FFFF","#FF0000FF","#3300FFFF","#0066FFFF","#0066FFFF","#33FF00FF","#CCFF00FF","#33FF00FF","#0066FFFF","#00FFFFFF","#0066FFFF","#0066FFFF","#0066FFFF","#0066FFFF","#0066FFFF","#0066FFFF","#0066FFFF","#FF0099FF","#FF0099FF","#FF0099FF","#FF0099FF","#33FF00FF","#33FF00FF","#33FF00FF","#33FF00FF","#00FF66FF","#33FF00FF","#33FF00FF","#00FFFFFF","#00FFFFFF","#00FF66FF","#00FF66FF","#00FF66FF","#00FF66FF","#00FF66FF","#00FF66FF","#FF0000FF","#FF0000FF","#FF9900FF","#FF9900FF","#FF9900FF","#FF9900FF","#CC00FFFF","#CC00FFFF","#CC00FFFF","#CC00FFFF","#CC00FFFF","#CC00FFFF","#CC00FFFF","#CCFF00FF","#CCFF00FF","#CCFF00FF","#CCFF00FF","#CCFF00FF","#CCFF00FF","#CCFF00FF","#CCFF00FF"]},"edges":{"from":["1. LEARNING GOALS","1. LEARNING GOALS","1. LEARNING GOALS","1. LEARNING GOALS","1. LEARNING GOALS","1. LEARNING GOALS","1. LEARNING GOALS","1. LEARNING GOALS","1. LEARNING GOALS","1. LEARNING GOALS","1. LEARNING GOALS","2. DIMENSIONS OF LEARNING","2. DIMENSIONS OF LEARNING","2. DIMENSIONS OF LEARNING","2. DIMENSIONS OF LEARNING","2. DIMENSIONS OF LEARNING","2. DIMENSIONS OF LEARNING","2. DIMENSIONS OF LEARNING","2. DIMENSIONS OF LEARNING","2. DIMENSIONS OF LEARNING","2. DIMENSIONS OF LEARNING","2. DIMENSIONS OF LEARNING","2. DIMENSIONS OF LEARNING","2. DIMENSIONS OF LEARNING","2. DIMENSIONS OF LEARNING","2. DIMENSIONS OF LEARNING","3. ASSESSMENT FOR, OF AND AS LEARNING","3. ASSESSMENT FOR, OF AND AS LEARNING","3. ASSESSMENT FOR, OF AND AS LEARNING","3. ASSESSMENT FOR, OF AND AS LEARNING","3. ASSESSMENT FOR, OF AND AS LEARNING","3. ASSESSMENT FOR, OF AND AS LEARNING","4. LEARNING PERSPECTIVES","4. LEARNING PERSPECTIVES","4. LEARNING PERSPECTIVES","4. LEARNING PERSPECTIVES","4. LEARNING PERSPECTIVES","4. LEARNING PERSPECTIVES","4. LEARNING PERSPECTIVES","4. LEARNING PERSPECTIVES","4. LEARNING PERSPECTIVES","4. LEARNING PERSPECTIVES","4. LEARNING PERSPECTIVES","4. LEARNING PERSPECTIVES","5. Culture of learning","5. Culture of learning","5. Culture of learning","5. Culture of learning","5. Culture of learning","6. Research and reflection","6. Research and reflection","6. Research and reflection","6. Research and reflection","6. Research and reflection","6. Research and reflection","6. Research and reflection","6. Research and reflection","6. Research and reflection","6. Research and reflection","7. Inclusiveness of learning","7. Inclusiveness of learning","7. Inclusiveness of learning","7. Inclusiveness of learning","7. Inclusiveness of learning","8. Gobernance and leadership","8. Gobernance and leadership","8. Gobernance and leadership","8. Gobernance and leadership","9. Learning space and time","9. Learning space and time","9. Learning space and time","9. Learning space and time","9. Learning space and time","9. Learning space and time","9. Learning space and time","9. Learning space and time","9. Learning space and time","9. Learning space and time","9. Learning space and time","10. Learning community","10. Learning community","10. Learning community","10. Learning community","10. Learning community","10. Learning community","10. Learning community","10. Learning community","10. Learning community","10. Learning community","10. Learning community","10. Learning community","10. Learning community"],"to":["The cell (Jazmin)","Brainstorming - Global warming - Women's day","Personal projects","Portafolio making","Self-organizing e.g. \"caba<a4>as\"","Team-work","Crop garden - Compost","Bee-friandly school project","99 questions 99 proposals","Women scientists project","Role-playng (Ane)","free play (juego libre)","Stop-motion films (Ale)","Art workshop","Community working days to fix the school","Montesori material","Active learning material","Bank","Football game cards","Music band","Gymnastics offered by Jazmin class","Communal breakfasts","Students feed-back loop from projects ","Personal projects","Christmas carol","Art from recycled stuff.","Montesori material","School reports for parents","Students diaries","Rubric cards","Peer assessment","Personal projects","Mind-fulness & Yoga","Harry potter magic wands co-creation","Personal projects","Brainstorming - Global warming - Women's day","Meeting-time shared experiences","Art workshop","The garden pond","Crop garden - Compost","Science fair","Montesori material","In-school activities (police dog - insects - Ambulance)","Students mobility across clases","self-organizing e.g. \"caba<a4>as\"","Bank","Personal projects","Brainstorming - Global warming - Women's day","Fixing broken things","Crop garden - Compost","Science fair","In-school workshops (networks - Azulejos)","Portafolio making","Observation table","Personal projects","Experimenting new teaching methods (e.g. Curso puente)","Failure as a key ingredient of research","Free play (juego libre)","Show and tell","Free configuration of clasrooms","Brainstorming - Global warming - Women's day","Women scientists project","Personal projects","Breakfast time","Monthly family meetings","Weekly pedagogic team meetings","Class Dojo","Organigram","Free configuration of clasrooms","Multi-age classes","School yard heterogeneity","Atelier","Pre-historic cave building + expedition","Football - team games","Movement room","Crop garden - Compost","Caza del oso","Free play (juego libre)","Students mobility across clases","Adaptation period","Community working days to fix the school","Whishlist","Grants (linea becas - desayunos solidarios)","A night at school","In-school activities (police dog - insects - Ambulance)","In-school workshops (networks - Azulejos)","Monthly family meetings","Class Dojo","Whatsupp group","AMPA","Webpage","Daily pick-up conversation time"],"color":["gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray","gray"],"smooth":[true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true],"shadow":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]},"nodesToDataframe":true,"edgesToDataframe":true,"options":{"width":"100%","height":"100%","nodes":{"shape":"dot","physics":false},"manipulation":{"enabled":false},"edges":{"smooth":false},"physics":{"stabilization":false}},"groups":null,"width":null,"height":null,"idselection":{"enabled":false},"byselection":{"enabled":false},"main":null,"submain":null,"footer":null,"igraphlayout":{"type":"square"}},"evals":[],"jsHooks":[]}</script>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
