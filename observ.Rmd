@@ -1,23 +1,58 @@
 ---
-title: "OBServ:"
+title: "OBServ"
 output: html_document
 editor_options: 
   chunk_output_type: console
 ---
 
 ## Open library of pollinator Biodiversity and ecosystem Services scenarios  
-**Belmont Forum-BiodivERsA** 
-**Coordinator: Ignasi Bartomeus**
+**Funded by:**  
+<img src="media/Belmont Forum.png" alt="logo" width="200"/>
+<img src="media/BiodivERsA logo.jpg" alt="logo" width="200"/>  
+**Coordinator:** Ignasi Bartomeus (EBD-CSIC)  
+**Partner:** Lucas Garibaldi (URN)  
+**Partner:** Rachael Winfree (Rutgers)  
+**Partner:** David Kleijn (Wageningen)  
+**Partner:** Ferdinando Villa (BC3)  
 
-The OBServ project ...  [comming soon]()
 
-# The Team:
+> The OBServ project OBServ aims to co-develop a user-friendly open library of pollinator biodiversity and ecosystem service models which can be used to deliver local and global predictive maps based on different environmental scenarios. In order to achieve this we will specifically (i) capture stakeholder needs and broader socio-economic dimensions of biodiversity, (ii) expand biodiversity models beyond species richness, and (iii) compare and validate predictions of data- driven, statistical and mechanistic biodiversity models.
+
+## The Team:
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(mapr)
-partners <- data.frame(Partner = c(), lat = c(), long= c())
-#map_leaflet(x = partners)
+partners <- data.frame(name = c("EBD-CSIC", "BC3", "Wageningen", "Rutgers", "Rio Negro"),
+                       Partner = c("Ignasi Bartomeus", "Ferdinando Villa", "David Kleijn", "Rachael Winfree", "Lucas Garibaldi"),
+                       latitude = c(37.385768, 43.327786, 51.985776, 40.480032, -41.146367), 
+                       longitude= c(-5.981614, -2.965836, 5.662882, -74.436096, -71.306643))
+map_leaflet(x = partners) 
 ```
 
-**Papers published**  
-1- Bartomeus & Dicks 2019. 
+## Papers published  
+
+1- The need for coordinated transdisciplinary research infrastructures for pollinator conservation and crop pollination resilience. 2019. Bartomeus & Dicks, Environ. Res. Lett. 14 045017 [link](https://iopscience.iop.org/article/10.1088/1748-9326/ab0cb5)
+
+_How to acknowledge OBServ:
+"This research was funded through the 2017-2018 Belmont Forum and BiodivERsA joint call for research proposals, under the BiodivScen ERA-Net COFUND programme, and with the funding organisations AEI, NWO, ECCyT and NSF"_
+
+## News  
+
+* See a demo of the amaizing kLab environemnt that we will be using: [link](https://www.youtube.com/watch?v=vsWGkMBpI9Y&feature=youtu.be)  
+* Group photo of our kick-off meeting:  
+<img src="media/OBServ_foto.jpg" alt="logo" width="200"/>  
+_Featuring Rachael Winfree, James Rilley, Ignasi Bartomeus, Ainhoa Magrach, Ferdinando Villa, David Kleijn, Lucas Garibaldi and Thijs Fijen._  
+
+
+## More information comming soon  
+
+------
+**Funded by:**  
+<img src="media/AEI.jpg" alt="logo" width="200"/>
+<img src="media/Ministerio_ECCyT-02.png" alt="logo" width="200"/>
+<img src="media/NWO.png" alt="logo" width="200"/>
+<img src="media/NSF_4-Color_bitmap_Logo.png" alt="logo" width="200"/>
+
+
+
+
