@@ -3,7 +3,7 @@ title: "Co-authors"
 output: html_document
 ---
 
-Those are most of my main co-authors represented as a network with auto-detected modules in different colors. The size of the nodes is proportional to the number of papers we have toguether. In red you can see a mix of core collaborators (R. Winfree, R. Rader, O. Godoy, ... ) along with people I only coautherd one paper with them. Then we can clearly identify my PhD network in light green (M. Vilà, I. Steffan-Dewenter, ...), my long standing collaboration with D. Sol in Yellow, Jamie Stavert Thesis in light blue and the people I collaborated during my postdoc at Rutgers in dark blue. Other groups seems a bit more aleatory and probably emerge from muti-authored synthesis papers. 
+Those are most of my main co-authors represented as a network with auto-detected modules in different colors. The size of the nodes is proportional to the number of papers we have toguether. 
 
 Data is extracted from [Google Schoolar](https://scholar.google.com/citations?hl=en&user=EXdyoWAAAAAJ) using the `scholarnetwork` package and visualized using `igraph` and `visNetwork`.
 
