@@ -1,0 +1,129 @@
+---
+title: "OBServ"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+## Crop Pollination Database  
+**Funded by:**  
+<img src="media/Belmont Forum.png" alt="logo" width="200"/>
+<img src="media/BiodivERsA logo.jpg" alt="logo" width="200"/>  
+**Coordinator:** Ignasi Bartomeus (EBD-CSIC)  
+
+> In recent years we've made a huge advance on understanding the effect of managed and wild pollinators on crop yield. However, our ability to predict visitation rates and crop yield are still limited due to the huge variation observed among crops, years and environments. To advance in this direction we want to (i) compile a dynamic and open database on crop pollination data published as a data paper with all data contributors as co-authors and (ii) use this database to compare the predictive ability of data-driven, statistical and mechanistic models on crop pollination. 
+
+We want to reach **all researchers** on crop pollination to create a dynamic crop pollination database. Basically, we are looking for studies measuring **pollinators** within the crop (visitation rates or abundances) for at least **five fields** and ideally a measure of **crop production**  (tones per hectare, fruit set, ...). Here you can download a [template](media/Crop_pollination_database.xlsx) with the requested data. However, if you have data in another format and no time to transform it to the template format, contact us and we can find a solution or we can directly accept raw data. Data should be sent to Alfonso Allen-Perkins (alfonso.allen.perkins@gmail.com) and queries to Ignasi Bartomeus (nacho.bartomeus@gmail.com). We will not publish anything without your explicit consent and you can always draw back your data in a later stage if you wish so. 
+
+### How your data will be used?
+
+(i) Open data papers allow gathering worldwide standardized data on a particular topic and constitute a huge resource for the community. These papers are highly cited and used, and the outcomes of the analysis that can be potentially done by the community, especially when merged with other types of data, are unpredictable and stimulate the advance of science. This is also a great way to give credit to all persons involved in data collection, as all data collectors are co-authors of the resulting data paper. In addition, we will encourage the citation of each individual study when only those are used. Examples of such efforts are the [predicts database](https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.2579), [TRY](https://onlinelibrary.wiley.com/doi/10.1111/gcb.14904) or the [meta-community database](https://www.nature.com/articles/s41597-019-0344-7?draft=marketing). We think that by building a worldwide crop pollination database (which will keep growing in the future years) we can help advance science and give proper credit to all data holders. We know data collection is a huge effort, and before publishing the data, we will share with all co-authors the full database at least 6 months in advance. We do not expect to publish the data paper until the end of 2021 to allow time to get as much data as possible.
+
+ 
+(ii) As mentioned above, we plan to use this data to compare the predictive ability of different modeling techniques. Prediction is the next frontier in ecology and if successful, our paper can have a great impact. Given this will be the first use of the database, we would like to invite relevant data holders that also want to get involved in the manuscript to co-author this first global paper. We expect the paper to be published in 2022.
+
+We hope to have you on board. Do not hesitate to ask any relevant question.
+
+## The Data:
+
+We already compiled data on more than 50 study systems worldwide, comprising > 400 fields from 20 different crop species. 
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(mapr)
+library(tmaptools)
+#library(sf)
+#library(tmap)
+crops <- c("Malpighia emarginata"
+           ,"Malus domestica"
+           ,"Malus domestica"
+           ,"Malus domestica"
+           ,"Vicia faba"
+           ,"Phaseolus vulgaris"
+           ,"Fagopyrum esculentum"
+           ,"Fagopyrum esculentum"
+           ,"Anacardium occidentale" 
+           ,"Coffea arabica"
+           ,"Coffea arabica"
+           ,"Gossypium hirsutum"
+           ,"Citrus paradisi"
+           ,"Allium porrum"
+           ,"Allium porrum"
+           ,"Citrus limon"
+           ,"Mangifera indica"
+           ,"Mangifera indica"
+           ,"Mangifera indica"
+           ,"Brassica napus"
+           ,"Brassica napus"
+           ,"Brassica napus"
+           ,"Brassica napus"
+           ,"Rubus idaeus"
+           ,"Fragaria × ananassa"
+           ,"Fragaria × ananassa"
+           ,"Fragaria × ananassa"
+           ,"Fragaria × ananassa"
+           ,"Fragaria × ananassa"
+           ,"Fragaria × ananassa"
+           ,"Helianthus annuus"
+           ,"Helianthus annuus")
+places <- c("Brazil, Ceará"
+            ,"Germany, Lake Constance"
+            ,"USA, Wisconsin"
+            ,"USA, Wisconsin"
+            ,"Sweden, Scania"
+            ,"Brazil, Goias/DF"
+            ,"Japan, Ibaraki"
+            ,"Japan, Ibaraki"
+            ,"Brazil, Ceará"
+            ,"Tanzania, Kilimanjaro"
+            ,"Brazil, Chapada Diamantina"
+            ,"USA, Gulf Coast Texas"
+            ,"Argentina, Yungas"
+            ,"France, Loire"
+            ,"Italy, South Italy"
+            ,"Argentina, Yungas"
+            ,"South Africa, Limpopo"
+            ,"South Africa, Limpopo"
+            ,"Australia, Queensland"
+            ,"Sweden, Scania"
+            ,"Sweden, Vastergotland"
+            ,"Ireland, South-East"
+            ,"China, Jiangxi"
+            ,"Argentina, Bariloche"
+            ,"Sweden, Scania"
+            ,"USA, New York"
+            ,"USA, New York"
+            ,"USA, New York"
+            ,"USA, California"
+            ,"Sweden, Scania"
+            ,"South Africa, Limpopo"
+            ,"France, Poitou-Charentes")
+lat <- c()
+long <- c()
+for(i in 1:length(places)){
+  temp <- geocode_OSM(places[i])
+  long[i] <- temp$coords[1]
+  lat[i] <- temp$coords[2]
+}
+crop_map <- data.frame(name = crops,
+                       latitude = jitter(lat), 
+                       longitude= jitter(long))
+map_leaflet(x = crop_map) 
+```
+
+## Papers published  
+
+1- A dynamic and open database on crop pollination. In preparation. Expected publication date: 2021.
+
+
+
+
+------
+**Funded by:**  
+<img src="media/AEI.jpg" alt="logo" width="200"/>
+<img src="media/Ministerio_ECCyT-02.png" alt="logo" width="200"/>
+<img src="media/NWO.png" alt="logo" width="200"/>
+<img src="media/NSF_4-Color_bitmap_Logo.png" alt="logo" width="200"/>
+
+
+
+

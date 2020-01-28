@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>OBServ</title>
+
+<script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="site_libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+<script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="site_libs/leaflet-binding-2.0.2/leaflet.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">All Projects</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="beefun.html">
+    <span class="fa fa-info"></span>
+     
+    Beefun
+  </a>
+</li>
+<li>
+  <a href="observ.html">
+    <span class="fa fa-info"></span>
+     
+    OBServ
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="http://www.bartomeuslab.com">
+    <span class="fa fa-home"></span>
+     
+    Bartomeus lab
+  </a>
+</li>
+<li>
+  <a href="mailto:nacho.bartomeus@gmail.com">
+    <span class="fa fa-envelope-o"></span>
+     
+    Contact me
+  </a>
+</li>
+<li>
+  <a href="https://github.com/ibartomeus">
+    <span class="fa fa-github"></span>
+     
+    GitHub
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">OBServ</h1>
+
+</div>
+
+
+<div id="crop-pollination-database" class="section level2">
+<h2>Crop Pollination Database</h2>
+<p><strong>Funded by:</strong><br />
+<img src="media/Belmont%20Forum.png" alt="logo" width="200"/> <img src="media/BiodivERsA%20logo.jpg" alt="logo" width="200"/><br />
+<strong>Coordinator:</strong> Ignasi Bartomeus (EBD-CSIC)</p>
+<blockquote>
+<p>In recent years we’ve made a huge advance on understanding the effect of managed and wild pollinators on crop yield. However, our ability to predict visitation rates and crop yield are still limited due to the huge variation observed among crops, years and environments. To advance in this direction we want to (i) compile a dynamic and open database on crop pollination data published as a data paper with all data contributors as co-authors and (ii) use this database to compare the predictive ability of data-driven, statistical and mechanistic models on crop pollination.</p>
+</blockquote>
+<p>We want to reach <strong>all researchers</strong> on crop pollination to create a dynamic crop pollination database. Basically, we are looking for studies measuring <strong>pollinators</strong> within the crop (visitation rates or abundances) for at least <strong>five fields</strong> and ideally a measure of <strong>crop production</strong> (tones per hectare, fruit set, …). Here you can download a <a href="media/Crop_pollination_database.xlsx">template</a> with the requested data. However, if you have data in another format and no time to transform it to the template format, contact us and we can find a solution or we can directly accept raw data. Data should be sent to Alfonso Allen-Perkins (<a href="mailto:alfonso.allen.perkins@gmail.com" class="email">alfonso.allen.perkins@gmail.com</a>) and queries to Ignasi Bartomeus (<a href="mailto:nacho.bartomeus@gmail.com" class="email">nacho.bartomeus@gmail.com</a>). We will not publish anything without your explicit consent and you can always draw back your data in a later stage if you wish so.</p>
+<div id="how-your-data-will-be-used" class="section level3">
+<h3>How your data will be used?</h3>
+<ol style="list-style-type: lower-roman">
+<li><p>Open data papers allow gathering worldwide standardized data on a particular topic and constitute a huge resource for the community. These papers are highly cited and used, and the outcomes of the analysis that can be potentially done by the community, especially when merged with other types of data, are unpredictable and stimulate the advance of science. This is also a great way to give credit to all persons involved in data collection, as all data collectors are co-authors of the resulting data paper. In addition, we will encourage the citation of each individual study when only those are used. Examples of such efforts are the <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.2579">predicts database</a>, <a href="https://onlinelibrary.wiley.com/doi/10.1111/gcb.14904">TRY</a> or the <a href="https://www.nature.com/articles/s41597-019-0344-7?draft=marketing">meta-community database</a>. We think that by building a worldwide crop pollination database (which will keep growing in the future years) we can help advance science and give proper credit to all data holders. We know data collection is a huge effort, and before publishing the data, we will share with all co-authors the full database at least 6 months in advance. We do not expect to publish the data paper until the end of 2021 to allow time to get as much data as possible.</p></li>
+<li><p>As mentioned above, we plan to use this data to compare the predictive ability of different modeling techniques. Prediction is the next frontier in ecology and if successful, our paper can have a great impact. Given this will be the first use of the database, we would like to invite relevant data holders that also want to get involved in the manuscript to co-author this first global paper. We expect the paper to be published in 2022.</p></li>
+</ol>
+<p>We hope to have you on board. Do not hesitate to ask any relevant question.</p>
+</div>
+</div>
+<div id="the-data" class="section level2">
+<h2>The Data:</h2>
+<p>We already compiled data on more than 50 study systems worldwide, comprising &gt; 400 fields from 20 different crop species.</p>
+<div id="htmlwidget-2f12111fc1667a1210f8" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2f12111fc1667a1210f8">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addCircleMarkers","args":[[45.767799241539,42.6521609041963,-5.33950434780105,59.160271214422,59.3053348218826,52.8798586041736,27.9874203949515,-24.2163479394258,-24.2193856684655,-3.09523191760752,-15.610135228271,36.2678789779612,36.2757299452344,59.1808341631277,40.6993964072131,40.7288590988052,40.7068493417744,36.6992196714903,59.1936292957777,29.1242210605337,-23.4593807024216,46.1348244432582,-5.34571633842199,47.6480102255924,44.4400298665995,44.4150336269448,-23.4591793316682,-23.4608730447744,-22.1548283363609,-15.9338639073856,-41.1474093211371,59.1583409106622],[4.03414485631177,12.735707118686,-39.6929451975689,17.7202279984131,18.1633294738553,-7.96281379355198,115.995284483628,-65.3545117322329,-65.3628795867294,37.4230947657317,-55.9989805064872,140.491089182872,140.414269290411,17.6818477574381,-74.0537906740976,-74.0067621879463,-73.9082219168262,-118.752755542905,17.6070066395327,-95.4539075293429,29.3329631634838,-0.199591301374318,-39.748428010307,9.44162416303035,-89.6509007365404,-89.6115144495347,29.3771371317877,29.3950575399063,144.576519282472,-50.1626365609393,-71.3346077345337,17.5573693767301],13,null,null,{"interactive":true,"className":"","stroke":true,"color":["#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D"],"weight":5,"opacity":0.5,"fill":true,"fillColor":["#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D","#F7766D"],"fillOpacity":0.2},null,null,["<table>\n<tr><td><strong>name<\/strong><\/td><td>Allium porrum<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>45.767799241539<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>4.03414485631177<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Allium porrum<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>42.6521609041963<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>12.735707118686<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Anacardium occidentale<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>-5.33950434780105<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-39.6929451975689<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Brassica napus<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>59.160271214422<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>17.7202279984131<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Brassica napus<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>59.3053348218826<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>18.1633294738553<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Brassica napus<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>52.8798586041736<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-7.96281379355198<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Brassica napus<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>27.9874203949515<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>115.995284483628<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Citrus limon<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>-24.2163479394258<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-65.3545117322329<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Citrus paradisi<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>-24.2193856684655<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-65.3628795867294<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Coffea arabica<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>-3.09523191760752<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>37.4230947657317<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Coffea arabica<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>-15.610135228271<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-55.9989805064872<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Fagopyrum esculentum<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>36.2678789779612<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>140.491089182872<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Fagopyrum esculentum<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>36.2757299452344<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>140.414269290411<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Fragaria × ananassa<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>59.1808341631277<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>17.6818477574381<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Fragaria × ananassa<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>40.6993964072131<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-74.0537906740976<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Fragaria × ananassa<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>40.7288590988052<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-74.0067621879463<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Fragaria × ananassa<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>40.7068493417744<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-73.9082219168262<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Fragaria × ananassa<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>36.6992196714903<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-118.752755542905<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Fragaria × ananassa<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>59.1936292957777<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>17.6070066395327<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Gossypium hirsutum<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>29.1242210605337<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-95.4539075293429<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Helianthus annuus<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>-23.4593807024216<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>29.3329631634838<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Helianthus annuus<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>46.1348244432582<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-0.199591301374318<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Malpighia emarginata<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>-5.34571633842199<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-39.748428010307<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Malus domestica<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>47.6480102255924<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>9.44162416303035<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Malus domestica<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>44.4400298665995<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-89.6509007365404<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Malus domestica<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>44.4150336269448<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-89.6115144495347<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Mangifera indica<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>-23.4591793316682<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>29.3771371317877<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Mangifera indica<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>-23.4608730447744<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>29.3950575399063<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Mangifera indica<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>-22.1548283363609<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>144.576519282472<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Phaseolus vulgaris<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>-15.9338639073856<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-50.1626365609393<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Rubus idaeus<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>-41.1474093211371<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-71.3346077345337<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Vicia faba<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>59.1583409106622<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>17.5573693767301<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>#F7766D<\/td><\/tr>\n<\/table>"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-41.1474093211371,59.3053348218826],"lng":[-118.752755542905,144.576519282472]}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="papers-published" class="section level2">
+<h2>Papers published</h2>
+<p>1- A dynamic and open database on crop pollination. In preparation. Expected publication date: 2021.</p>
+<hr />
+<p><strong>Funded by:</strong><br />
+<img src="media/AEI.jpg" alt="logo" width="200"/> <img src="media/Ministerio_ECCyT-02.png" alt="logo" width="200"/> <img src="media/NWO.png" alt="logo" width="200"/> <img src="media/NSF_4-Color_bitmap_Logo.png" alt="logo" width="200"/></p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
