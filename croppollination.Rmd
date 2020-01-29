@@ -5,7 +5,8 @@ editor_options:
   chunk_output_type: console
 ---
 
-## Crop Pollination Database  
+## Crop Pollination Database    
+
 **Funded by:**  
 <img src="media/Belmont Forum.png" alt="logo" width="200"/>
 <img src="media/BiodivERsA logo.jpg" alt="logo" width="200"/>  
@@ -13,26 +14,27 @@ editor_options:
 
 > In recent years we've made a huge advance on understanding the effect of managed and wild pollinators on crop yield. However, our ability to predict visitation rates and crop yield are still limited due to the huge variation observed among crops, years and environments. To advance in this direction we want to (i) compile a dynamic and open database on crop pollination data published as a data paper with all data contributors as co-authors and (ii) use this database to compare the predictive ability of data-driven, statistical and mechanistic models on crop pollination. 
 
-We want to reach **all researchers** on crop pollination to create a dynamic crop pollination database. Basically, we are looking for studies measuring **pollinators** within the crop (visitation rates or abundances) for at least **five fields** and ideally a measure of **crop production**  (tones per hectare, fruit set, ...). Here you can download a [template](media/Crop_pollination_database.xlsx) with the requested data. However, if you have data in another format and no time to transform it to the template format, contact us and we can find a solution or we can directly accept raw data. Data should be sent to Alfonso Allen-Perkins (alfonso.allen.perkins@gmail.com) and queries to Ignasi Bartomeus (nacho.bartomeus@gmail.com). We will not publish anything without your explicit consent and you can always draw back your data in a later stage if you wish so. 
+We want to reach **all researchers** working on the pollination of different crops to create a dynamic crop pollination database. Basically, we are looking for studies measuring **pollinators** within the crop (visitation rates or abundances) for at least **five fields** and ideally a measure of crop **production** (tonnes per hectare, fruit set, …). Here you can download a [template](media/Crop_pollination_database.xlsx) with the requested data. However, if you have data in another format and no time to transform it to the template format, contact us and we can find a solution or we can directly accept raw data. Data should be sent to Alfonso Allen-Perkins (alfonso.allen.perkins@gmail.com) and queries to Ignasi Bartomeus (nacho.bartomeus@gmail.com). We will not publish anything without your explicit consent and you can always draw back your data in a later stage if you wish to do so.
+
 
 ### How your data will be used?
 
-(i) Open data papers allow gathering worldwide standardized data on a particular topic and constitute a huge resource for the community. These papers are highly cited and used, and the outcomes of the analysis that can be potentially done by the community, especially when merged with other types of data, are unpredictable and stimulate the advance of science. This is also a great way to give credit to all persons involved in data collection, as all data collectors are co-authors of the resulting data paper. In addition, we will encourage the citation of each individual study when only those are used. Examples of such efforts are the [predicts database](https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.2579), [TRY](https://onlinelibrary.wiley.com/doi/10.1111/gcb.14904) or the [meta-community database](https://www.nature.com/articles/s41597-019-0344-7?draft=marketing). We think that by building a worldwide crop pollination database (which will keep growing in the future years) we can help advance science and give proper credit to all data holders. We know data collection is a huge effort, and before publishing the data, we will share with all co-authors the full database at least 6 months in advance. We do not expect to publish the data paper until the end of 2021 to allow time to get as much data as possible.
+(i) Open data papers allow us to gather global standardized data on a particular topic, thus constituting a huge resource for the scientific community. These papers are highly cited products, and the outcomes of the analysis that can be potentially done with them, especially when merged with other types of data, are unpredictable. This approach also represents a great way to give credit to everyone involved in the collection of data, as all data collectors are co-authors of the resulting data paper. In addition, we will encourage the citation of each individual study when only those are used. Examples of such efforts are the [predicts database](https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.2579), [TRY](https://onlinelibrary.wiley.com/doi/10.1111/gcb.14904) or the [meta-community database](https://www.nature.com/articles/s41597-019-0344-7?draft=marketing). We think that by building a worldwide crop pollination database (which will keep growing in the future years) we can stimulate the advance of science and give proper credit to all data holders. We know data collection is a huge effort, and before publishing the data, we will share with all co-authors the full database at least 6 months in advance. We do not expect to publish the data paper until the end of 2021 to allow time to get as much data as possible.
 
  
-(ii) As mentioned above, we plan to use this data to compare the predictive ability of different modeling techniques. Prediction is the next frontier in ecology and if successful, our paper can have a great impact. Given this will be the first use of the database, we would like to invite relevant data holders that also want to get involved in the manuscript to co-author this first global paper. We expect the paper to be published in 2022.
+(ii) As mentioned above, we plan to use this data to compare the predictive ability of different modeling techniques. Prediction is the next frontier in ecology and if successful, our work can have a great impact. Given this will be the first use of the database, we would like to invite relevant data holders that also want to get involved in the manuscript to co-author this first global paper. We expect the paper to be published in 2022.
 
 We hope to have you on board. Do not hesitate to ask any relevant question.
 
 ## The Data:
 
-We already compiled data on more than 50 study systems worldwide, comprising > 400 fields from 20 different crop species. 
+We already compiled data on more than 50 study systems worldwide, comprising > 400 fields from 20 different crop species.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(mapr)
 library(tmaptools)
-#library(sf)
-#library(tmap)
+library(sf)
+library(tmap)
 crops <- c("Malpighia emarginata"
            ,"Malus domestica"
            ,"Malus domestica"
@@ -70,7 +72,7 @@ places <- c("Brazil, Ceará"
             ,"USA, Wisconsin"
             ,"USA, Wisconsin"
             ,"Sweden, Scania"
-            ,"Brazil, Goias/DF"
+            ,"Brazil, Goias"
             ,"Japan, Ibaraki"
             ,"Japan, Ibaraki"
             ,"Brazil, Ceará"
@@ -112,7 +114,7 @@ map_leaflet(x = crop_map)
 
 ## Papers published  
 
-1- A dynamic and open database on crop pollination. In preparation. Expected publication date: 2021.
+1- A dynamic and open global database on crop pollination. In preparation. Expected publication date: 2021.
 
 
 
