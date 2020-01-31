@@ -112,6 +112,15 @@ crop_map <- data.frame(name = crops,
 map_leaflet(x = crop_map) 
 ```
 
+## FAQ:
+
+- *Do you accept published datasets?* Yes, in fact most datasets are already published and we will link your dataset to the original publication
+
+- *Do you accept data collected within cereal fields or greenhouses?* Yes, while cereals do not depend on pollinators, this data may be interesting for questions about diversity in agricultural landscapes. On the other hand, greenhouse data may not be relevant for diversity questions, but can help relating visitation rates to yield. 
+
+- *I have data for several plots within each field, do you also want this resolution?* Most datasets contain agreggated measures per field. Given the different experimental dessigns used by diferent researchers, aggregated data is the easiest to armonize across datasets and the preferred format.
+
+
 ## Papers published  
 
 1- A dynamic and open global database on crop pollination. In preparation. Expected publication date: 2021.
