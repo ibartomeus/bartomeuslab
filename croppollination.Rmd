@@ -28,7 +28,7 @@ We hope to have you on board. Do not hesitate to ask any relevant question.
 
 ## The Data:
 
-We already compiled data on more than 50 study systems worldwide, comprising > 400 fields from 20 different crop species.
+We already compiled data on more than 100 study systems worldwide, comprising > 600 fields from 20 different crop species. We will update the map soon.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(mapr)
@@ -120,8 +120,13 @@ map_leaflet(x = crop_map)
 
 - *I have data for several plots within each field, do you also want this resolution?* Most datasets contain agreggated measures per field. Given the different experimental dessigns used by diferent researchers, aggregated data is the easiest to armonize across datasets and the preferred format.
 
+- *Do you want pan trap data?* We updated the landscape to capture the sampling method. While pollinator abundance or visitation rates are more direct methods. Pan trap data or unestrcutured sweep netting data are also interesting.
 
-## Papers published  
+- *I have a different yield measure than the prefferred one, what can I do?* We understand that each study was dessigned different and different crop yields are measured in different units. While seed set (%) and weigth per hectare are (tones/ha) are quite common, if you have other measures, we added a column to specify your measure and allow up to two units to be reported by treatment (open pollination, pollinator exclusion, and pollen suplement).
+
+
+
+## Papers in preparation:  
 
 1- A dynamic and open global database on crop pollination. In preparation. Expected publication date: 2021.
 
