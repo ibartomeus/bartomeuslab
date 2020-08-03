@@ -24,7 +24,7 @@ library(BeeFunData)
 data(sites)
 #head(sites)
 library(mapr)
-sites$name <- as.character(sites$Siye_ID)
+sites$name <- as.character(sites$Site_ID)
 map_leaflet(x = sites[,-1])
 ```
 
@@ -103,7 +103,7 @@ knitr::include_graphics("https://ibartomeus.files.wordpress.com/2017/08/rplot.pn
 We are still working in publishing these results.
 
 **Papers using this data: **  
-1- Magrach, Molina, **Bartomeus**. Network structure effects on plant functioning. In prep.   
+1- Magrach, Molina, **Bartomeus**. Niche complementarity between pollinators increases community-level plant reproductive success. bioRxiv, ver.7 peer-reviewed by Peer Community in, 629931.   
 2- Desjardins, **Bartomeus**, Poisot, Gravel. A simple algorithm to effectively predict ecological interactions. In prep.   
 3- Botias, Gomez-Diaz, Molina, **Bartomeus**. Understanding the plant-pollintor-pathogen network. In prep.   
 4- Rodriguez-Sanchez, Molina, **Bartomeus** Forecasting the dynamics of mutualistic networks with environmental change. In prep.   
@@ -122,9 +122,9 @@ knitr::include_graphics("media/Stavert2017.png")
 7- Stavert, Pattemore, **Bartomeus**, Gaskett, Beggs. EExotic flies maintain pollination services as native pollinators decline with agricultural expansion. [Journal of Applied Ecology 55 (4), 1737-1746](https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/1365-2664.13103)  
 8- Coux, Rader, **Bartomeus**, Tylianakis. Linking species functional roles to their network roles. 2016 [Ecology letters 19 (7), 762-770](https://onlinelibrary.wiley.com/doi/abs/10.1111/ele.12612)   
 9- Rader, **Bartomeus** et al. Non-bee insects are important contributors to global crop pollination. 2016 [Proceedings of the National Academy of Sciences 113 (1), 146-151](http://www.pnas.org/content/113/1/146.short)   
-10- Stavert, **Bartomeus**, Beggs, Gasket, Pattermore. Species evenness increases pollinator sharing and reduces plant reproduction. In review.  
-11- **Bartomeus** and Dicks. The need for coordinated transdisciplinary research infrastructures for pollinator conservation and crop pollination resilience. [In review.](https://peerj.com/preprints/26898)   
-12- Kendall, ..., **Bartomeus**. Pollinator size and its consequences: Predictive allometry for pollinating insects. [In review.](https://www.biorxiv.org/content/early/2018/08/22/397604.abstract)   
+10- Stavert, **Bartomeus**, Beggs, Gasket, Pattermore. Plant species dominance increases pollination complementarity and plant reproductive function. [Ecology 100 (9), e02749.](https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecy.2749#:~:text=Contrary%20to%20our%20expectation%2C%20numerical,plant%20species%20in%20our%20cages)  
+11- **Bartomeus** and Dicks. The need for coordinated transdisciplinary research infrastructures for pollinator conservation and crop pollination resilience. [Environmental Research Letters 14, 045017](https://iopscience.iop.org/article/10.1088/1748-9326/ab0cb5/meta#acknowledgements)   
+12- Kendall, ..., **Bartomeus**. Pollinator size and its consequences: Predictive allometry for pollinating insects. [Ecol Evol. 2019; 9: 1702– 1714](https://doi.org/10.1002/ece3.4835)   
 
 **Thesis supported:** The thesis of Jamie Stavert was conducted in the framework of BeeFun project.
 

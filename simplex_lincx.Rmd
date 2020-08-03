@@ -1,0 +1,38 @@
+---
+title: "SIMPLEX + LINCX:"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+## LINCX: Linking Network structure and species CoeXistence.
+## SIMPLEX: Simple models that capture the complexity of multi-species coexistence 
+
+**Explora ciencia projects** CGL2014-61590-EXP and CGL2017-92436-EXP.  
+**Researchers: Ignasi Bartomeus and Oscar Godoy**    
+
+This two linked projects explore how we can add multitrophic complexity to species coexistence models.   
+
+**Lincx** put forward the fundational theoretical work (Godoy et al 2019), and tested the models with experimental (Bartomeus et al. In prep) and observational data (Lanuza et al 2019).  
+
+Papers:   
+
+- Godoy, O., Bartomeus, I., Rohr, R. P., & Saavedra, S. (2018). Towards the integration of niche and network theories. Trends in Ecology & Evolution, 33(4), 287-300.  
+- Lanuza, J. B., Bartomeus, I., & Godoy, O. (2018). Opposing effects of floral visitors and soil conditions on the determinants of competitive outcomes maintain species diversity in heterogeneous landscapes. Ecology Letters, 21(6), 865-874.   
+- Bartomeus, I., & Godoy, O. (2018). Biotic controls of plant coexistence. Journal of Ecology, 106(5), 1767-1772.  
+- Bartomeus, I., Rohr, R. P., & Saavedra, S., Godoy, O. Experimental evaluation of network topolgy on species coexistence. In prep.  
+- Busche, Bartomeus, Godoy. Higher Order Interactions. In Prep.   
+
+**SIMPLEX** tries to operationalyze those models (MartYn et al In review), make them useful (Garcia-Callejas et al 2020), and predictive (Garcia-Algarra et al In Prep).  
+Papers:
+
+- García‐Callejas, D., Godoy, O., & Bartomeus, I. cxr: A toolbox for modelling species coexistence in R. Methods in Ecology and Evolution. In press.  
+R Package: https://github.com/RadicalCommEcol/cxr  
+- Garcia-Algarra, Civantos, Garcia-Callejas, Godoy, Bartomeus. Using Machine Learning to predict species coexistance. In Prep.  
+- Garcia-Callejas, Hurtado, Godoy, Bartomeus. The multilayer structure of plant-pollinator-herbivore networks. In prep.  
+- Trace E. Martyn1, Daniel B. Stouffer, Oscar Godoy, Ignasi Bartomeus, Abigail Pastore, Margaret M. Mayfield. Identifying ‘useful’ fitness models: balancing the benefits ofadded complexity with realistic data requirements in modelsof individual plant fitness. In Review.  
+
+
+
+
+
