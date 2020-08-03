@@ -28,87 +28,18 @@ We hope to have you on board. Do not hesitate to ask any relevant question.
 
 ## The Data:
 
-We already compiled data on more than 100 study systems worldwide, comprising > 600 fields from 20 different crop species. We will update the map soon.
+We already compiled data on more than 160 study systems worldwide, comprising > 2000 fields from 38 different crop species. You can see there are some geographical gaps, share your data!
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(mapr)
-library(tmaptools)
-library(sf)
-library(tmap)
-crops <- c("Malpighia emarginata"
-           ,"Malus domestica"
-           ,"Malus domestica"
-           ,"Malus domestica"
-           ,"Vicia faba"
-           ,"Phaseolus vulgaris"
-           ,"Fagopyrum esculentum"
-           ,"Fagopyrum esculentum"
-           ,"Anacardium occidentale" 
-           ,"Coffea arabica"
-           ,"Coffea arabica"
-           ,"Gossypium hirsutum"
-           ,"Citrus paradisi"
-           ,"Allium porrum"
-           ,"Allium porrum"
-           ,"Citrus limon"
-           ,"Mangifera indica"
-           ,"Mangifera indica"
-           ,"Mangifera indica"
-           ,"Brassica napus"
-           ,"Brassica napus"
-           ,"Brassica napus"
-           ,"Brassica napus"
-           ,"Rubus idaeus"
-           ,"Fragaria × ananassa"
-           ,"Fragaria × ananassa"
-           ,"Fragaria × ananassa"
-           ,"Fragaria × ananassa"
-           ,"Fragaria × ananassa"
-           ,"Fragaria × ananassa"
-           ,"Helianthus annuus"
-           ,"Helianthus annuus")
-places <- c("Brazil, Ceará"
-            ,"Germany, Lake Constance"
-            ,"USA, Wisconsin"
-            ,"USA, Wisconsin"
-            ,"Sweden, Scania"
-            ,"Brazil, Goias"
-            ,"Japan, Ibaraki"
-            ,"Japan, Ibaraki"
-            ,"Brazil, Ceará"
-            ,"Tanzania, Kilimanjaro"
-            ,"Brazil, Chapada Diamantina"
-            ,"USA, Gulf Coast Texas"
-            ,"Argentina, Yungas"
-            ,"France, Loire"
-            ,"Italy, South Italy"
-            ,"Argentina, Yungas"
-            ,"South Africa, Limpopo"
-            ,"South Africa, Limpopo"
-            ,"Australia, Queensland"
-            ,"Sweden, Scania"
-            ,"Sweden, Vastergotland"
-            ,"Ireland, South-East"
-            ,"China, Jiangxi"
-            ,"Argentina, Bariloche"
-            ,"Sweden, Scania"
-            ,"USA, New York"
-            ,"USA, New York"
-            ,"USA, New York"
-            ,"USA, California"
-            ,"Sweden, Scania"
-            ,"South Africa, Limpopo"
-            ,"France, Poitou-Charentes")
-lat <- c()
-long <- c()
-for(i in 1:length(places)){
-  temp <- geocode_OSM(places[i])
-  long[i] <- temp$coords[1]
-  lat[i] <- temp$coords[2]
-}
-crop_map <- data.frame(name = crops,
-                       latitude = jitter(lat), 
-                       longitude= jitter(long))
+data <- read.csv("data/Summary_field_level_data_Nacho.csv")
+#nrow(data)
+#unique(data$crop)
+#sum(data$number_sites)
+#summary(data$year)
+crop_map <- data.frame(name = data$crop,
+                       latitude = jitter(data$latitude), 
+                       longitude= jitter(data$longitude))
 map_leaflet(x = crop_map) 
 ```
 
@@ -120,18 +51,16 @@ map_leaflet(x = crop_map)
 
 - *I have data for several plots within each field, do you also want this resolution?* Most datasets contain agreggated measures per field. Given the different experimental dessigns used by diferent researchers, aggregated data is the easiest to armonize across datasets and the preferred format.
 
-- *Do you want pan trap data?* We updated the landscape to capture the sampling method. While pollinator abundance or visitation rates are more direct methods. Pan trap data or unestrcutured sweep netting data are also interesting.
+- *Do you want pan trap data?* We updated the template to capture the sampling method. While pollinator abundance or visitation rates are more direct methods. Pan trap data or unestrcutured sweep netting data are also interesting.
 
 - *I have a different yield measure than the prefferred one, what can I do?* We understand that each study was dessigned different and different crop yields are measured in different units. While seed set (%) and weigth per hectare are (tones/ha) are quite common, if you have other measures, we added a column to specify your measure and allow up to two units to be reported by treatment (open pollination, pollinator exclusion, and pollen suplement).
-
 
 
 ## Papers in preparation:  
 
 1- A dynamic and open global database on crop pollination. In preparation. Expected publication date: 2021.
 
-
-
+2- Modelling pollination services: A model performance comparision. In preparation.
 
 ------
 **Funded by:**  

@@ -29,22 +29,25 @@ partners <- data.frame(name = c("EBD-CSIC", "BC3", "Wageningen", "Rutgers", "Rio
 map_leaflet(x = partners) 
 ```
 
-## Papers published  
-
-1- The need for coordinated transdisciplinary research infrastructures for pollinator conservation and crop pollination resilience. 2019. Bartomeus & Dicks, Environ. Res. Lett. 14 045017 [link](https://iopscience.iop.org/article/10.1088/1748-9326/ab0cb5)
-
-_How to acknowledge OBServ:
-"This research was funded through the 2017-2018 Belmont Forum and BiodivERsA joint call for research proposals, under the BiodivScen ERA-Net COFUND programme, and with the funding organisations AEI, NWO, ECCyT and NSF"_
-
 ## News  
 
+* We are launching a **[Global Crop Pollintion Database](croppollination.html)**
+* OBServ was highly represented at [ECOFLOR 2020](https://ecoflor2020.weebly.com/)
 * See a demo of the amaizing kLab environemnt that we will be using: [link](https://www.youtube.com/watch?v=vsWGkMBpI9Y&feature=youtu.be)  
 * Group photo of our kick-off meeting:  
 <img src="media/OBServ_foto.jpg" alt="logo" width="200"/>  
 _Featuring Rachael Winfree, James Rilley, Ignasi Bartomeus, Ainhoa Magrach, Ferdinando Villa, David Kleijn, Lucas Garibaldi and Thijs Fijen._  
 
+## Papers published  
 
-## More information comming soon  
+- Bartomeus, I. and Dicks, L.V., 2019. The need for coordinated transdisciplinary research infrastructures for pollinator conservation and crop pollination resilience. Environmental Research Letters, 14(4), p.045017.   [link](https://iopscience.iop.org/article/10.1088/1748-9326/ab0cb5)
+- Garibaldi, L.A., Sáez, A., Aizen, M.A., Fijen, T. and Bartomeus, I., 2020. Crop pollination management needs flower‐visitor monitoring and target values. Journal of Applied Ecology, 57(4), pp.664-670.   [link](https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/1365-2664.13574)
+- Reilly, J.R., Artz, D.R., Biddinger, D., Bobiwash, K., Boyle, N.K., Brittain, C., Brokaw, J., Campbell, J.W., Daniels, J., Elle, E. and Ellis, J.D., 2020. Crop production in the USA is frequently limited by a lack of pollinators. Proceedings of the Royal Society B, 287(1931), p.20200922. [link](https://royalsocietypublishing.org/doi/abs/10.1098/rspb.2020.0922?casa_token=nDj4Boq0kwUAAAAA:LyPCrCTqCO8lA3FoEWCosjc5rqUm7RwTtXxsaFO4lZK0l5qkzxczibHdQ7eWBzsKu7RS1psdxEG54g)  
+- Blasi, Bartomeus, Bommarco, Gagic, Garratt, Holzschuh, Kleijn, Lindström, Olsson, Polce, Potts, Rundlöf, Scheper, Smith, Steffan-Dewenter, Clough. Evaluating predictive performance of models explaining wild bee pollinator abundance in a mass-flowering crops. In Review.  
+
+_How to acknowledge OBServ:
+"This research was funded through the 2017-2018 Belmont Forum and BiodivERsA joint call for research proposals, under the BiodivScen ERA-Net COFUND programme, and with the funding organisations AEI, NWO, ECCyT and NSF"_
+
 
 ------
 **Funded by:**  
