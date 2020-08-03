@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -85,7 +85,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -234,6 +233,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -245,18 +245,6 @@ $(document).ready(function () {
   display: none;
 }
 </style>
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
 
 <!-- code folding -->
 
@@ -337,19 +325,33 @@ $(document).ready(function () {
 
 
 <ul>
+<li><p>SHOWCASE: Showcasing synergies between agriculture, biodiversity and ecosystem services to help farmers capitalizing on native biodiversity - H2020 2020-2025.</p></li>
 <li><p><a href="observ.html">OBServ</a> : Open library of pollinator Biodiversity and ecosystem Services scenarios - Belmont Forum-BiodivERsA. 2019-2022.</p></li>
-<li><p>SIMPLEX : TBA</p></li>
+<li><p><a href="https://www.evacranetrust.org/page/unveiling-wild-bee-pathogen-transmission-patterns-at-the-community-level">BeePath</a> : Unveiling wild bee pathogen transmission patterns at the community level - Eva Crane Trust 2018</p></li>
+<li><p><a href="simplex_lincx.html">SIMPLEX</a> : Simple models that capture the complexity of multi-species coexistence - MINECO-CGL2017-92436-EXP. 2018-2019.</p></li>
+<li><p><a href="simplex_lincx.html">LINCX</a> : Linking Network structure and species CoeXistence. MINECO-CGL2014-61590-EXP 2016-2017.</p></li>
 <li><p><a href="beefun.html">BeeFun</a> : Pollinator responses to global change and its implications for ecosystem function - Marie Curie Actions – FP7-PEOPLE-2013-CIG (PCIG14-GA-2013-631653). 2014-2018.</p></li>
 <li><p>SpanishBees: Learning from the past for predicting the future of bee pollinators. FBBVA- IN(15)CMA_CMA_2136. 2016-2017.</p></li>
-<li><p>LINCX: Linking Network structure and species CoeXistence. MINECO-CGL2014-61590-EXP 2016-2017.</p></li>
 </ul>
 <div id="abstracts" class="section level1">
 <h1>Abstracts</h1>
 <blockquote>
-<p><strong>Beefun</strong>: As of the year 2000, 40% of Earth’s ice-free land area is being directly used by humans, and an additional 37% is surrounded by human-modified areas. Land-use change, along with other human-induced global change drivers, is accelerating the rates of extinction of most taxa. Researchers are beginning to experimentally investigate how these changes in biodiversity affect ecosystem services, such as water purification, climate regulation, and food production, but do not yet understand the effects of species loss in real ecosystems. Pollination is a critical ecosystem service and relies upon multiple species of pollinators. This project aims to understand the threats to the pollinator species that provide this critical ecosystem function and assess the consequences of their decline in real ecosystems. Research about the functional consequences of biodiversity is dominated by small-scale experimental studies. These experiments have manipulated diversity by assembling random subsets of species drawn from a common pool of taxa. This approach is useful for understanding the theoretical consequences of diversity loss but is unrealistic in the sense that it assumes species can go extinct in any sequence over time. Extinction, however, is generally a nonrandom process with risk determined by life- history traits such as rarity, body size, and sensitivity to environmental stressors. The importance of biodiversity loss on the production and stability of ecosystem services will depend, then, on which bee species are lost, and which species are well- adapted to anthropogenic habitats. I investigated this relationship by developing a framework that goes beyond aggregate biodiversity measures and takes into account trait functional diversity, species-specific responses, and community structure. So far, using replicated data on three crops along Northeast USA I found that pollinator species traits do not predict either response to agricultural intensification or functional contribution, but that a few dominant species are responsible for most of the ecosystem services delivered. Hence, studying this species may be the most efficient way to make sound predictions. I expanded these ideas in a global synthesis including more than 40 different crops around the globe to show that these dominant species depend on the crop studied, and hence a diversity of pollinators is needed for securing food production. Moreover, I already collected two years of data for measuring pollination stability in natural systems in southern Spain and I plan to collect two more years in order to answer longer term stability questions. This data will allow me to validate some of the trends observed in larger-scale analysis and infer more direct mechanisms on how pollinators respond to global change drivers and its implications for the ecosystem functioning.</p>
+<p><strong>SHOWCASE</strong>: In SHOWCASE, leading scientists in the field of agro-ecology and socio-economy join forces with farmer and citizen science networks, nature conservation NGO’s and science communication specialists to achieve a breakthrough in the integration of biodiversity into farming. The overall objective of SHOWCASE is to make biodiversity an integral part of European farming by identifying effective incentives to invest in biodiversity in diverse socio-ecological contexts, providing the evidence that these incentives result in biodiversity increases and biodiversity-based, socio-economic benefits, and communicating both the principles and best practices to as wide a range of stakeholders as possible.</p>
+</blockquote>
+<blockquote>
+<p><strong>OBServ</strong>: Over 40% of Earth’s ice-free land area is directly being used by humans and an additional 37% is heavily influenced by human activities. Land-use change, along with other human-induced global change drivers such as global warming and nitrogen deposition, are accelerating the rates of extinction of most taxa. Pollination is a critical ecosystem service and relies upon multiple species of pollinators, mainly insects. The total economic value of crop pollination worldwide is estimated to be over 153 billion $ annually, with over 75% of agricultural crops depending on pollinators. This proposal aims to use pollinators and the ecosystem services they provide as a key model system to develop a predictive framework that can inform policy makers. OBServ aims to co-develop a user- friendly open library of pollinator biodiversity and ecosystem service models which can be used to deliver local and global predictive maps based on different environmental scenarios. In order to achieve this we will specifically (i) capture stakeholder needs and broader socio-economic dimensions of biodiversity, (ii) expand biodiversity models beyond species richness, and (iii) compare and validate predictions of data-driven, statistical and mechanistic biodiversity models. We already compiled the largest dataset on crop pollinators encompassing more than 100 studies over the world and start building the models to be parametrized with this data. We expect to be able to provide solid tools to understand and predict how pollination services will change under different scenarios.</p>
+</blockquote>
+<blockquote>
+<p><strong>BeePath</strong>: One of the main threats to bee health is the proliferation of pathogens and parasites infecting both managed and wild bees. Diseases are often the tipping point collapsing bee populations already exposed to human-induced rapid environmental changes. While there is evidence of some pathogen transmission from managed to wild bee populations, the prevalence and mechanisms behind this phenomenon are largely unknown. Moreover, despite the great advances made for understanding the effect of plant-bee networks for the stability of the ecosystem, we know virtually nothing about how the pathogen-bee network is organized or its consequences for bee population dynamics. The overarching aim of our study is to investigate the mechanisms underlying the pathogen transmission patterns in pollinator communities. Recent advances in DNA sequencing may allow us to get a glimpse of this problem for the first time.</p>
+</blockquote>
+<blockquote>
+<p><strong>SIMPLEX</strong>: Understanding biodiversity maintenance is central to ecology, especially on the face of human-induced environmental change and the alarming rates of biodiversity loss. We have made great progress in building solid mathematical models able to predict coexistence among interacting species across trophic levels. These advances include recent conceptual and mathematical toolboxes developed by our group allowing the simultaneous assessment of coexistence on complete communities composed by several trophic levels, for example between plants, pollinators and herbivores. However, the empirical evaluation of this theoretical framework has proved to be more challenging than expected for two reasons. First, there is a paucity of datasets measuring multitrophic interactions for complete communities integrated by several types of interactions (e.g including competition, predation, pollination or parasitism). Second, the current coexistence models are complex and the number of parameters to estimate grows exponentially with the number of species in the community, making them impractical for real-world communities. To solve this conundrum, we need to find new ways to reconcile the power of large datasets with models rooted in solid theory. The use of Machine Learning techniques has revolutionized the predictive ability of several complex problems by learning patterns from data, but Machine Learning algorithms are traditionally non interpretable, and hence disconnected from theory. Here we propose to use in-development rule based algorithms to simplify parameter estimation without loosing the interpretability. In addition, we will complete two unique highly resolved empirical multi-trophic datasets comprising complete communities in Spain and Canada. To tight together data and models, we choose a key question at the forefront of coexistence theory: can computer techniques help predicting the species interaction structure that enhances multi-species coexistence?</p>
 </blockquote>
 <blockquote>
 <p><strong>LINCX</strong>: Understanding biodiversity maintenance is central to ecology, especially on the face of human-induced environmental change and the alarming rates of biodiversity loss. Despite coexistence theory and complex networks theory have produced important theoretical advances on the mechanisms determining species persistence, information from both parallel fields have never been integrated. On one hand, coexistence theory has been useful to explain diversity for pairwise competitive interactions within one trophic level (e.g. plant-plant), but this theory has been difficult to scale up to a multitrophic community level. On the other hand, network theory works at the community level and has theoretically shown that the network structure of interspecific interactions (e.g. mutualism) is a key driver of species coexistence, but the theory still relies on important empirically untested assumptions. While the two theories aim to explain diversity maintenance, they do clash in their approaches. Here we propose to bring together researchers from both disciplines to develop a common framework that can potentially unify both theories. For that end, we choose a key simple question at the core of the controversy: what is a stronger factor determining community persistence, competitive processes or network topology? We will empirically address our question using a plant-pollinator system where plant species under different competition regimes are placed under two contrasting plant-pollinator network topologies. By properly perturbing the system, we can compare changes in species reproduction under different competition regimes and network topologies. The experiment will not only shed new light on the relative importance of competitive versus mutualistic interactions for diversity maintenance, but the measured parameters will directly feed the new theoretical models allowing us to start disentangling the actual conundrum of community persistence.</p>
+</blockquote>
+<blockquote>
+<p><strong>Beefun</strong>: As of the year 2000, 40% of Earth’s ice-free land area is being directly used by humans, and an additional 37% is surrounded by human-modified areas. Land-use change, along with other human-induced global change drivers, is accelerating the rates of extinction of most taxa. Researchers are beginning to experimentally investigate how these changes in biodiversity affect ecosystem services, such as water purification, climate regulation, and food production, but do not yet understand the effects of species loss in real ecosystems. Pollination is a critical ecosystem service and relies upon multiple species of pollinators. This project aims to understand the threats to the pollinator species that provide this critical ecosystem function and assess the consequences of their decline in real ecosystems. Research about the functional consequences of biodiversity is dominated by small-scale experimental studies. These experiments have manipulated diversity by assembling random subsets of species drawn from a common pool of taxa. This approach is useful for understanding the theoretical consequences of diversity loss but is unrealistic in the sense that it assumes species can go extinct in any sequence over time. Extinction, however, is generally a nonrandom process with risk determined by life- history traits such as rarity, body size, and sensitivity to environmental stressors. The importance of biodiversity loss on the production and stability of ecosystem services will depend, then, on which bee species are lost, and which species are well- adapted to anthropogenic habitats. I investigated this relationship by developing a framework that goes beyond aggregate biodiversity measures and takes into account trait functional diversity, species-specific responses, and community structure. So far, using replicated data on three crops along Northeast USA I found that pollinator species traits do not predict either response to agricultural intensification or functional contribution, but that a few dominant species are responsible for most of the ecosystem services delivered. Hence, studying this species may be the most efficient way to make sound predictions. I expanded these ideas in a global synthesis including more than 40 different crops around the globe to show that these dominant species depend on the crop studied, and hence a diversity of pollinators is needed for securing food production. Moreover, I already collected two years of data for measuring pollination stability in natural systems in southern Spain and I plan to collect two more years in order to answer longer term stability questions. This data will allow me to validate some of the trends observed in larger-scale analysis and infer more direct mechanisms on how pollinators respond to global change drivers and its implications for the ecosystem functioning.</p>
 </blockquote>
 </div>
 
@@ -370,6 +372,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
