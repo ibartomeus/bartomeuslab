@@ -1,13 +1,12 @@
 ---
-title: "Showcase"
+title: "Campos llenos de vida"
 output: html_document
 editor_options: 
   chunk_output_type: console
 ---
-## Campos llenos de vida    
 
+**Proyecto:** Showcase     
 **Coordinador:** Ignasi Bartomeus (EBD-CSIC)  
-<img src="media/SHOWCASE.png" alt="logo" width="200"/>     
 
 > En nuestro día día convivimos con cientos de espcies animales y vegetales increibles. Algunas nos ayudan a polinizar nuestras plantas, otras fijan carbono, otras fertilizan nuestro suelo y otras simplemente nos deslumbran con su belleza. Nos apasiona la naturaleza, y por eso llevamos tiempo trabajando para entender como aprovechar estos recursos naturales de forma sostenible. Con este proyecto queremos apoyar y acompañar a agricultores que quieren cuidar de su tierra y crear espacios biodiversos y rentables. Queremos dar voz a una manera de cultivar sostenible que permita conservar la naturleza en paisages productivos. 
 
@@ -37,6 +36,7 @@ map_leaflet(x = crop_map)
 ------
 **Con la colaboración de:**  
 <img src="media/EUH2020.jpg" alt="logo" width="200"/>
+<img src="media/SHOWCASE.png" alt="logo" width="200"/>     
 <img src="media/AAS.png" alt="logo" width="200"/>
 <img src="media/Logo-EBD.jpg" alt="logo" width="200"/>
 
