@@ -31,6 +31,8 @@ We already compiled data on more than 190 study systems worldwide, comprising > 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(mapr)
 dat <- read.csv("../OBservData/Final_Data/CropPol_field_level_data.csv")
+#subset(dat, crop == "Allium porrum", select = c("study_id", "latitude"))
+#subset(data, crop == "Allium porrum", select = c("study_id", "latitude"))
 #head(dat)
 library(reshape2)
 to_plot1 <- dcast(data = dat, 
