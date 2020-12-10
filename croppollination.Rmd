@@ -12,21 +12,21 @@ editor_options:
 <img src="media/BiodivERsA logo.jpg" alt="logo" width="200"/>  
 **Coordinator:** Ignasi Bartomeus (EBD-CSIC)  
 
-> In recent years we've made a huge advance on understanding the effect of managed and wild pollinators on crop yield. However, our ability to predict visitation rates and crop yield are still limited due to the huge variation observed among crops, years and environments. To advance in this direction we want to (i) compile a dynamic and open database on crop pollination data published as a data paper with all data contributors as co-authors and (ii) use this database to compare the predictive ability of data-driven, statistical and mechanistic models on crop pollination. 
+> In recent years we have made huge advances in our understanding of the effects of managed and wild pollinators on crop yield. However, our ability to predict visitation rates and crop yield are still limited due to the huge variation observed among crops, years and environments. To advance in this direction we want to (i) compile a dynamic and open database on crop pollination data published as a data paper with all data contributors as co-authors and (ii) use this database to compare the predictive ability of data-driven, statistical and mechanistic models on crop pollination. 
 
-We want to reach **all researchers** working on the pollination of different crops to create a dynamic crop pollination database. Basically, we are looking for studies measuring **pollinators** within the crop (visitation rates or abundances) for at least **five fields** and ideally a measure of crop **production** (tonnes per hectare, fruit set, …). Here you can download the [template](https://github.com/ibartomeus/OBservData/raw/master/Template/Template_example_V9.ods) with the requested data. Data should be sent using our semi-automated workflow (See Read Me, How to contribute: https://github.com/ibartomeus/OBservData). Queries can be sent to Alfonso Allen-Perkins (alfonso.allen.perkins@gmail.com) or Ignasi Bartomeus (nacho.bartomeus@gmail.com). 
+We want to reach **every researcher** working on the pollination of different crops to create a dynamic crop pollination database. Basically, we are looking for studies measuring **pollinators** within the crop (visitation rates or abundances) for at least **five fields** and ideally a measure of crop **production** (tonnes per hectare, fruit set, …). Here you can download the [template](https://github.com/ibartomeus/OBservData/raw/master/Template/Template_example_V9.ods) with the requested data. Data should be sent using our semi-automated workflow (See Read Me, How to contribute: https://github.com/ibartomeus/OBservData). Queries can be sent to Alfonso Allen-Perkins (alfonso.allen.perkins@gmail.com) or Ignasi Bartomeus (nacho.bartomeus@gmail.com). 
 
-### How your data will be used?
+### How will your data be used?
 
-(i) Open data papers allow us to gather global standardized data on a particular topic, thus constituting a huge resource for the scientific community. These papers are highly cited products, and the outcomes of the analysis that can be potentially done with them, especially when merged with other types of data, are unpredictable. This approach also represents a great way to give credit to everyone involved in the collection of data, as **all data collectors are co-authors of the resulting data paper**. In addition, we will encourage the citation of each individual study when only those are used. Examples of such efforts are the [predicts database](https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.2579), [TRY](https://onlinelibrary.wiley.com/doi/10.1111/gcb.14904) or the [meta-community database](https://www.nature.com/articles/s41597-019-0344-7?draft=marketing). We think that by building a worldwide crop pollination database (which will keep growing in the future years) we can stimulate the advance of science and give proper credit to all data holders. 
+(i) Open data papers allow us to gather global standardized data on a particular topic, thus constituting a huge resource for the scientific community. These papers are highly cited products. Further, the outcomes of the analysis that can be done with them, especially when merged with other types of data, are unpredictable. This approach also represents a great way to give credit to everyone involved in the collection of data, as **all data collectors are co-authors of the resulting data paper**. In addition, we will encourage the citation of each individual study when only those are used. Examples of such efforts are the [predicts database](https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.2579), [TRY](https://onlinelibrary.wiley.com/doi/10.1111/gcb.14904) or the [meta-community database](https://www.nature.com/articles/s41597-019-0344-7?draft=marketing). We think that by building a worldwide crop pollination database (which will keep growing in the future years) we can stimulate the advance of science and give proper credit to all data holders.  
  
-(ii) As mentioned above, we plan to use this data to compare the predictive ability of different modeling techniques. Prediction is the next frontier in ecology and if successful, our work can have a great impact. Given this will be the first use of the database, we would like to invite interested data holders that also want to get involved in the manuscript to co-author this first global paper. We expect the paper to be published in 2022.
+(ii) As mentioned above, we plan to use this data to compare the predictive ability of different modeling techniques. Prediction is the next frontier in ecology and if successful, our work can have a great impact. Given this will be the first use of the database, we would like to invite interested data holders that also want to get involved in the manuscript to co-author this first global paper. We expect the paper to be published in 2022.  
 
-We hope to have you on board. Do not hesitate to ask any relevant question.
+We hope to have you on board. Do not hesitate to ask any relevant question.   
 
 ## The Data:
 
-We already compiled data on more than 190 study systems worldwide, comprising > 3000 fields from 49 different crop species. You can see there are some geographical gaps, share your data!
+We have already compiled data from > 190 study systems worldwide, comprising > 3000 fields from 49 different crop species. You can see there are some geographical gaps, share your data to change this!  
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(mapr)
@@ -56,15 +56,16 @@ map_leaflet(x = crop_map)
 
 ## FAQ:
 
-- *Do you accept published datasets?* Yes, in fact most datasets are already published and we will link your dataset to the original publication
 
-- *Do you accept data collected within cereal fields or greenhouses?* Yes, while cereals do not depend on pollinators, this data may be interesting for questions about diversity in agricultural landscapes. On the other hand, greenhouse data may not be relevant for diversity questions, but can help relating visitation rates to yield. 
+- *Do you accept published datasets?* Yes, in fact most datasets are already published, and we will link your dataset to the original publication  
 
-- *I have data for several plots within each field, do you also want this resolution?* Most datasets contain agreggated measures per field. Given the different experimental dessigns used by diferent researchers, aggregated data is the easiest to armonize across datasets and the preferred format.
+- *Do you accept data collected within cereal fields or greenhouses?* Yes, while cereals do not depend on pollinators, this data may be interesting for questions about diversity in agricultural landscapes. On the other hand, greenhouse data may not be relevant for diversity questions, but can help relating visitation rates to yield.
 
-- *Do you want pan trap data?* We updated the template to capture the sampling method. While pollinator abundance or visitation rates are more direct methods. Pan trap data or unestrcutured sweep netting data are also interesting.
+- *I have data for several plots within each field, do you also want this resolution?* Most datasets contain aggregated measures per field. Given the different experimental designs used by different researchers, aggregated data is the easiest way to harmonize across datasets and the preferred format.
 
-- *I have a different yield measure than the prefferred one, what can I do?* We understand that each study was dessigned different and different crop yields are measured in different units. While seed set (%) and weigth per hectare are (tones/ha) are quite common, if you have other measures, we added a column to specify your measure and allow up to two units to be reported by treatment (open pollination, pollinator exclusion, and pollen suplement).
+- *Do you want pan trap data?* We updated the template to capture the sampling method. While pollinator abundance or visitation rates are more direct methods. Pan-trap data or unstructured sweep-netting data are also interesting.  
+
+- *I have a different yield measure than the prefferred one, what can I do?* We understand that each study was designed differently and that crop yields are measured in different units. While seed set (%) and weight per unit of surface (tonnes/ha) are quite common, if you have other measures, we have added a column to specify your measure and allow up to two units to be reported by treatment (open pollination, pollinator exclusion, and pollen supplementation).  
 
 
 ## Papers in preparation:  
