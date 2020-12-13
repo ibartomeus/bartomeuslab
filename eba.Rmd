@@ -21,13 +21,15 @@ Apoyamos a una agricultura con sentido común. Una agricultura que piensa a larg
 Para crear esta comunidad nos hemos centrado en el valle del Guadalquivir. Si eres agricultor, cooperativa, ong, o cualquier agente involucrado y quieres participar contacta con nacho.bartomeus@gmail.com. Hay muchas maneras de participar, desde dejar oír tu voz, hasta involucrarte implementando las medidas co-diseñadas en tu campo. El único objetivo es que este proyecto sea útil para todos, así que participar en una oportunidad de beneficiarse de recursos y experiencia compartida.
 
 
-En este mapa iremos situando los actores implicados:   
+En este mapa iremos situando los actores implicados. De momento, ya contamos con el coordinador, la Estación Biológica de Doñana, con una empresa tecnologica de agricultira de precisión y con la ong [Abejas Silvestres](http://www.abejassilvestres.es).
+
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(mapr) #Añadir cortijo el puerto? Techcrop?
-crop_map <- data.frame(name = c("EBD-CSIC", ""),
-                       latitude = c(37.41213016416577, 37.672967783186955), 
-                       longitude= c(-6.005646701123254, -5.529750308568409))
-map_leaflet(x = crop_map) 
+crop_map <- data.frame(name = c("EBD-CSIC", "PlantPy", "AbejasSilvestres.es"),
+                       actor = c("investigación", "empresa", "ong"),
+                       latitude = c(37.4121, 37.4762, 37.3873), 
+                       longitude= c(-6.0056, -5.9519, -6.0386))
+map_leaflet(x = crop_map, color = c("red", "blue", "green")) 
 ```
 
 ## Preguntas frecuentes:
@@ -45,6 +47,8 @@ map_leaflet(x = crop_map)
 **Con la colaboración de:**   
 <img src="media/AAS.png" alt="logo" width="200"/>
 <img src="media/Logo-EBD.jpg" alt="logo" width="200"/>
+<img src="media/plantpy.png" alt="logo" width="200"/>
+
 
 
 
