@@ -10,6 +10,9 @@ navbar:
     - text: "OBServ"
       icon: fa-info
       href: observ.html
+    - text: "Guadalquivida"
+      icon: fa-info
+      href: eba.html
   right:
     - text: "Bartomeus lab"
       icon: fa-home 
