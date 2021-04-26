@@ -5,7 +5,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-- SHOWCASE: Showcasing synergies between agriculture, biodiversity and ecosystem services to help farmers capitalizing on native biodiversity - H2020 2020-2025.
+- [SHOWCASE](https://showcase-project.eu/): Showcasing synergies between agriculture, biodiversity and ecosystem services to help farmers capitalizing on native biodiversity - H2020 2020-2025. You can find information about our Ecological Biodiversity Area, [Gudalquivida, here](eba.html).
 
 - [OBServ](observ.html) : Open library of pollinator Biodiversity and ecosystem Services scenarios - Belmont Forum-BiodivERsA. 2019-2022.
 
