@@ -135,6 +135,7 @@ ambientales de los campos de cultivo.
 En este mapa iremos situando los actores implicados. De momento, ya contamos con el coordinador, la Estación Biológica de Doñana, con una empresa tecnologica de agricultira de precisión y con la ong [Abejas Silvestres](http://www.abejassilvestres.es).
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(ggplot2)
 library(leaflet)
 library(leaflet.extras)
 library(mapr) #Añadir cortijo el puerto? Techcrop?
@@ -142,9 +143,10 @@ crop_map <- data.frame(name = c("EBD-CSIC", "PlantPy", "AbejasSilvestres.es"),
                        actor = c("investigación", "empresa", "ong"),
                        latitude = c(37.4121, 37.4762, 37.3873), 
                        longitude= c(-6.0056, -5.9519, -6.0386))
+# Running a call to ggplotly prior to leaflet seems to fix the problem.
+plotly::ggplotly(ggplot())
 m <- map_leaflet(x = crop_map, color = c("red", "blue", "green"))
 m %>% addTiles(urlTemplate = "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png")
-m
 ```
 
 
