@@ -9,21 +9,100 @@ editor_options:
 
 # Frutales llenos de vida  
 
-> En nuestro día a día convivimos con cientos de especies animales y vegetales increíbles. Algunas nos ayudan a polinizar nuestras plantas, otras fijan carbono de la atmósfera, otras fertilizan nuestro suelo y otras simplemente nos deslumbran con su belleza. Nos apasiona la naturaleza, y por eso llevamos tiempo trabajando para entender cómo aprovechar estos recursos naturales de forma sostenible. Con este proyecto queremos apoyar y acompañar a agricultores que quieren cuidar de su tierra y crear espacios biodiversos y rentables. Queremos dar voz a una manera de cultivar sostenible que permita conservar la naturaleza en paisajes productivos.
-
-El proyecto SHOWCASE es un proyecto internacional financiado por el programa EU-H2020 conformado por más de 20 instituciones públicas y privadas en toda Europa. Parte de este proyecto pretende involucrar a agricultores, cooperativas, investigadores y conservacionistas en un proceso colaborativo para encontrar soluciones en que todos ganemos. Esto implica crear comunidades donde colaborar entre todos para diseñar, implementar y evaluar medidas que permitan mejorar la conservación de la naturaleza a la vez que la productividad y sostenibilidad de nuestros campos de cultivo. Tenemos cinco años por delante para ello (2021-2025).
+> Frutas cultivadas de manera **rentable** y
+**sostenible**, haciendo un uso coherente de los
+recursos y aprovechando los beneficios de la
+naturaleza para crear paisajes biodiversos.
 
 **Proyecto:** Showcase     
 **Coordinador:** Ignasi Bartomeus (EBD-CSIC)  
 
-## ¿Qué hacemos?
+## ¿Quiénes somos?
 
-Apoyamos a una agricultura con sentido común. Una agricultura que piensa a largo plazo y que está comprometida con el medioambiente. Para ello no hay una receta única. El éxito reside en co-diseñar medidas adaptadas a la realidad económica, social y ecológica de cada lugar y evaluar ese proceso rigurosamente. En España, estamos empezando a construir esta comunidad en el valle del Guadalquivir (Norte de Sevilla), alrededor de cultivos de frutales (pero no necesariamente restringido a ellos). Las acciones a llevar a cabo pueden variar desde desarrollar herramientas sencillas para medir el potencial polinizador de las fincas, hasta optimizar el uso del agua, todo dependerá de las necesidades y posibles soluciones que encontremos.
+Somos un grupo de investigadores del CSIC
+(Estación Biológica de Doñana)
+
+Formamos parte del proyecto internacional [**SHOWCASE**](https://showcase-project.eu/)(programa europeo H2020: 2021-2025). 
+En este proyecto participan más de 20 instituciones públicas y privadas en toda Europa 
+de 10 países. Se trata de un proyecto interdisciplinar que pretende exponer las sinergias entre la agricultura, la biodiversidad y los servicios de los ecosistemas para ayudar a
+los agricultores a capitalizar la biodiversidad local.
+El **objetivo principal** de este proyecto es **hacer la biodiversidad** una **parte**
+**integral** de la **agricultura europea**.
+Persigue identificar incentivos para promover la biodiversidad en la agricultura, mostrar evidencias de los beneficios que ello conlleva y comunicar tanto principios como buenas
+prácticas a agricultores, políticos y la sociedad en general.
+
+## ¿Qué buscamos? 
+
+**Agricultores de frutas de hueso** y cooperativas del sector interesados en
+participar activamente en la comunidad piloto Gualquivida.
+
+>Estamos localizando:
+      • Grupo de **20-30 agricultores de frutas de hueso en la Vega del Guadalquivir**
+        que estén dispuestos a implementar medidas co-diseñadas e innovadoras en sus fincas.
+      • **Gente del sector** de frutas de hueso, tanto personas como
+        organizaciones **que quieran compartir su experiencia**, y colaborar en
+        el desarrollo del proyecto.
+        
+        
+La comunidad **Guadalquivida** desarrollará **investigación activa y colaborativa** durante el periodo 2021-2023. Esta comunidad será un espacio donde compartir conocimiento y buscar soluciones en común. Entre todos, identificaremos las necesidades y codiseñaremos medidas
+eficaces, que integren los intereses de la producción, los beneficios que ofrece la biodiversidad para ello y que ayuden a conservar la naturaleza.
+
+Nos gustaría que esta comunidad sirva de ejemplo y se convierta en un modelo a seguir.
+
+Otros agentes y organizaciones que tengan relación con el sector serán también invitadas a la comunidad, para un diálogo abierto sobre los objetivos del proyecto. Conjuntamente ingeniaremos respuestas a los retos económicos, sociales y ecológicos de la zona. Para ello se realizarán talleres, entrevistas, cuestionarios cortos, desarrollo de prácticas y otras actividades. La participación podrá variar según los intereses y la disponibilidad.
+
+## ¿Qué ofrecemos?
+
+Nuestro **conocimiento y experiencia** para:
+
+> • Proveer con información relevante basada en evidencias solidas.
+  • Acompañar en el co-diseño de medidas innovadoras.
+  • Recursos en la medida de nuestras posibilidades para la implementación
+    exitosa de medidas. No ofrecemos subsidios directos.
+  • Evaluación de los resultados de forma rigurosa.
+  • Identificar conclusiones eficaces.
+  
+Ofrecemos un **asesoramiento basado en evidencias** y la oportunidad de
+beneficiarse de compartir recursos y experiencias. También, ayudaremos
+a visibilizar el sector como comprometido con el medioambiente y hacer
+llegar las necesidades a las personas que diseñan las políticas agrarias en
+Europa.
+
+
+## Algunas ideas que ya han ido surgiendo
+
+En las conversaciones que ya estamos teniendo con agricultores y cooperativas
+han surgido algunas ideas y propuestas, por ejemplo:
+
+  • Desarrollar herramientas sencillas para medir el potencial polinizador de
+    las fincas.
+  • Evaluación de costes y beneficios de cubiertas y otras infraestructuras
+    verdes como bandas florales.
+  • Optimizar el uso del agua.
+  • Etiquetado y estrategias de diferenciación de mercado.
+
+**Estamos abiertos y encantados de escuchar vuestras ideas.**
+
 
 ## ¿Quieres participar?
 
-Para crear esta comunidad nos hemos centrado en el valle del Guadalquivir. Si eres agricultor, cooperativa, ong, o cualquier agente involucrado y quieres participar contacta con guadalquivida@gmail.com. Hay muchas maneras de participar, desde dejar oír tu voz, hasta involucrarte implementando las medidas co-diseñadas en tu campo. El único objetivo es que este proyecto sea útil para todos, así que participar en una oportunidad de beneficiarse de recursos y experiencia compartida.
+Para crear esta comunidad nos hemos centrado en el Valle del Guadalquivir. Si eres agricultor, cooperativa, ONG, o cualquier agente involucrado y quieres participar contacta con guadalquivida@gmail.com. Hay muchas maneras de participar, desde dejar oír tu voz, hasta involucrarte implementando las medidas co-diseñadas en tu campo. El único objetivo es que este proyecto sea útil para todos, así que participar en una oportunidad de beneficiarse de recursos y experiencia compartida.
 
+## Nuestros intereses
+
+Queremos **dar voz, visibilizar y mostrar evidencias** sobre una manera de
+cultivar que permita conservar la naturaleza en los agroecosistemas.
+Nuestro objetivo es acompañar y apoyar a agricultores en la producción
+de alimentos de manera rentable, aprovechando los recursos naturales de
+manera coherente y creando paisajes diversos.
+Queremos **fomentar una agricultura con sentido común**. Es decir,
+una agricultura que piensa a largo plazo, que está comprometida con
+el medioambiente, pero que no se olvide de los agricultores, fomente la
+viabilidad productiva y favorezca los beneficios económicos, sociales y
+ambientales de los campos de cultivo.
+
+
+## Quienes participamos
 
 En este mapa iremos situando los actores implicados. De momento, ya contamos con el coordinador, la Estación Biológica de Doñana, con una empresa tecnologica de agricultira de precisión y con la ong [Abejas Silvestres](http://www.abejassilvestres.es).
 
