@@ -1,13 +1,28 @@
 ---
-title: "Gudalquivida"
+title: ""
 output: html_document
 editor_options: 
   chunk_output_type: console
+--- 
+
+```{r include=FALSE}
+title_var <- "Guadalquivida"
+```    
 ---
+title: `r title_var`
+---
+
+
+
 <style type="text/css">
+  .title{
+    display: none;
+  }
   body{
   font-size: 13pt;
 }
+
+
 </style>
 
 
@@ -120,13 +135,16 @@ ambientales de los campos de cultivo.
 En este mapa iremos situando los actores implicados. De momento, ya contamos con el coordinador, la Estación Biológica de Doñana, con una empresa tecnologica de agricultira de precisión y con la ong [Abejas Silvestres](http://www.abejassilvestres.es).
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(leaflet)
 library(mapr) #Añadir cortijo el puerto? Techcrop?
 crop_map <- data.frame(name = c("EBD-CSIC", "PlantPy", "AbejasSilvestres.es"),
                        actor = c("investigación", "empresa", "ong"),
                        latitude = c(37.4121, 37.4762, 37.3873), 
                        longitude= c(-6.0056, -5.9519, -6.0386))
-map_leaflet(x = crop_map, color = c("red", "blue", "green")) 
+m <- map_leaflet(x = crop_map, color = c("red", "blue", "green"))
+m %>% addTiles('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
 ```
+
 
 ## <span style="color:darkgreen"> Preguntas frecuentes: </span> 
 
