@@ -146,8 +146,13 @@ crop_map <- data.frame(name = c("EBD-CSIC", "PlantPy", "AbejasSilvestres.es"),
                        longitude= c(-6.0056, -5.9519, -6.0386))
 # Running a call to ggplotly prior to leaflet seems to fix the problem.
 plotly::ggplotly(ggplot())
+<<<<<<< HEAD
 m <- map_leaflet(x = crop_map, color = c("red", "blue", "green")) %>% addTiles(urlTemplate = "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png")
 m
+=======
+m <- map_leaflet(x = crop_map, color = c("red", "blue", "green"))
+m %>% addTiles(urlTemplate = "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png")
+>>>>>>> 1ee6f538fb08767bead594f3a7fcb184e4523ec6
 ```
 
 
