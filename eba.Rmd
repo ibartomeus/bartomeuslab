@@ -4,42 +4,55 @@ output: html_document
 editor_options: 
   chunk_output_type: console
 ---
+<style type="text/css">
+  body{
+  font-size: 13pt;
+}
+</style>
+
 
 <img src="media/guadalquivida.jpg" alt="logo" width="1000"/>
 
-# Frutales llenos de vida  
 
-> Frutas cultivadas de manera **rentable** y
-**sostenible**, haciendo un uso coherente de los
-recursos y aprovechando los beneficios de la
-naturaleza para crear paisajes biodiversos.
 
-**Proyecto:** Showcase     
-**Coordinador:** Ignasi Bartomeus (EBD-CSIC)  
+# <span style="color:darkgreen"> Frutales llenos de vida </span> 
 
-## ¿Quiénes somos?
+ > Frutas cultivadas de manera  **rentable**  y  **sostenible**, 
+   haciendo un uso coherente de los recursos y aprovechando 
+   los beneficios de la naturaleza para crear paisajes biodiversos.
 
-Somos un grupo de investigadores del CSIC
+
+
+## <span style="color:darkgreen"> ¿Quiénes somos? </span> 
+
+Somos un grupo de **investigadores del CSIC**
 (Estación Biológica de Doñana)
+*Coordinador:* Ignasi Bartomeus  
 
-Formamos parte del proyecto internacional [**SHOWCASE**](https://showcase-project.eu/)(programa europeo H2020: 2021-2025). 
+Formamos parte del proyecto internacional [**SHOWCASE**](https://showcase-project.eu/)(programa europeo H2020: 2021-2025).
+  
+
+
 En este proyecto participan más de 20 instituciones públicas y privadas en toda Europa 
 de 10 países. Se trata de un proyecto interdisciplinar que pretende exponer las sinergias entre la agricultura, la biodiversidad y los servicios de los ecosistemas para ayudar a
 los agricultores a capitalizar la biodiversidad local.
+
 El **objetivo principal** de este proyecto es **hacer la biodiversidad** una **parte**
 **integral** de la **agricultura europea**.
+
 Persigue identificar incentivos para promover la biodiversidad en la agricultura, mostrar evidencias de los beneficios que ello conlleva y comunicar tanto principios como buenas
 prácticas a agricultores, políticos y la sociedad en general.
 
-## ¿Qué buscamos? 
+## <span style="color:darkgreen"> ¿Qué buscamos? </span> 
 
 **Agricultores de frutas de hueso** y cooperativas del sector interesados en
 participar activamente en la comunidad piloto Gualquivida.
 
 >Estamos localizando:
-      • Grupo de **20-30 agricultores de frutas de hueso en la Vega del Guadalquivir**
+>
+      * Grupo de **20-30 agricultores de frutas de hueso en la Vega del Guadalquivir**
         que estén dispuestos a implementar medidas co-diseñadas e innovadoras en sus fincas.
-      • **Gente del sector** de frutas de hueso, tanto personas como
+      * **Gente del sector** de frutas de hueso, tanto personas como
         organizaciones **que quieran compartir su experiencia**, y colaborar en
         el desarrollo del proyecto.
         
@@ -51,16 +64,16 @@ Nos gustaría que esta comunidad sirva de ejemplo y se convierta en un modelo a 
 
 Otros agentes y organizaciones que tengan relación con el sector serán también invitadas a la comunidad, para un diálogo abierto sobre los objetivos del proyecto. Conjuntamente ingeniaremos respuestas a los retos económicos, sociales y ecológicos de la zona. Para ello se realizarán talleres, entrevistas, cuestionarios cortos, desarrollo de prácticas y otras actividades. La participación podrá variar según los intereses y la disponibilidad.
 
-## ¿Qué ofrecemos?
+## <span style="color:darkgreen"> ¿Qué ofrecemos? </span> 
 
 Nuestro **conocimiento y experiencia** para:
 
-> • Proveer con información relevante basada en evidencias solidas.
-  • Acompañar en el co-diseño de medidas innovadoras.
-  • Recursos en la medida de nuestras posibilidades para la implementación
+> * Proveer con información relevante basada en evidencias solidas.
+  * Acompañar en el co-diseño de medidas innovadoras.
+  * Recursos en la medida de nuestras posibilidades para la implementación
     exitosa de medidas. No ofrecemos subsidios directos.
-  • Evaluación de los resultados de forma rigurosa.
-  • Identificar conclusiones eficaces.
+  * Evaluación de los resultados de forma rigurosa.
+  * Identificar conclusiones eficaces.
   
 Ofrecemos un **asesoramiento basado en evidencias** y la oportunidad de
 beneficiarse de compartir recursos y experiencias. También, ayudaremos
@@ -69,26 +82,26 @@ llegar las necesidades a las personas que diseñan las políticas agrarias en
 Europa.
 
 
-## Algunas ideas que ya han ido surgiendo
+## <span style="color:darkgreen"> Algunas ideas que ya han ido surgiendo </span> 
 
 En las conversaciones que ya estamos teniendo con agricultores y cooperativas
 han surgido algunas ideas y propuestas, por ejemplo:
 
-  • Desarrollar herramientas sencillas para medir el potencial polinizador de
+>  * Desarrollar herramientas sencillas para medir el potencial polinizador de
     las fincas.
-  • Evaluación de costes y beneficios de cubiertas y otras infraestructuras
+  * Evaluación de costes y beneficios de cubiertas y otras infraestructuras
     verdes como bandas florales.
-  • Optimizar el uso del agua.
-  • Etiquetado y estrategias de diferenciación de mercado.
+  * Optimizar el uso del agua.
+  * Etiquetado y estrategias de diferenciación de mercado.
 
 **Estamos abiertos y encantados de escuchar vuestras ideas.**
 
 
-## ¿Quieres participar?
+## <span style="color:darkgreen"> ¿Quieres participar? </span> 
 
 Para crear esta comunidad nos hemos centrado en el Valle del Guadalquivir. Si eres agricultor, cooperativa, ONG, o cualquier agente involucrado y quieres participar contacta con guadalquivida@gmail.com. Hay muchas maneras de participar, desde dejar oír tu voz, hasta involucrarte implementando las medidas co-diseñadas en tu campo. El único objetivo es que este proyecto sea útil para todos, así que participar en una oportunidad de beneficiarse de recursos y experiencia compartida.
 
-## Nuestros intereses
+## <span style="color:darkgreen"> Nuestros intereses </span> 
 
 Queremos **dar voz, visibilizar y mostrar evidencias** sobre una manera de
 cultivar que permita conservar la naturaleza en los agroecosistemas.
@@ -102,7 +115,7 @@ viabilidad productiva y favorezca los beneficios económicos, sociales y
 ambientales de los campos de cultivo.
 
 
-## Quienes participamos
+## <span style="color:darkgreen"> Quiénes participamos </span> 
 
 En este mapa iremos situando los actores implicados. De momento, ya contamos con el coordinador, la Estación Biológica de Doñana, con una empresa tecnologica de agricultira de precisión y con la ong [Abejas Silvestres](http://www.abejassilvestres.es).
 
@@ -115,7 +128,7 @@ crop_map <- data.frame(name = c("EBD-CSIC", "PlantPy", "AbejasSilvestres.es"),
 map_leaflet(x = crop_map, color = c("red", "blue", "green")) 
 ```
 
-## Preguntas frecuentes:
+## <span style="color:darkgreen"> Preguntas frecuentes: </span> 
 
 - *¿Solo estáis actuando en el valle del Guadalquivir?* Como comunidad piloto, sí. Pero pronto empezaremos a generar documentación y recursos para poder auto-organizarse en otras regiones y estaremos encantados de echar una mano compartiendo nuestra experiencia.   
 
