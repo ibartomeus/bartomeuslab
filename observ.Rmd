@@ -29,9 +29,10 @@ partners <- data.frame(name = c("EBD-CSIC", "BC3", "Wageningen", "Rutgers", "Rio
 map_leaflet(x = partners) 
 ```
 
-## What we do at OBServ?
+## What do we do at OBServ?
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=QTuf3uoyVhw&list=PLPZvHabFOP0HiKQSlbRnmZLVD8KELuqnG&index=20" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=QTuf3uoyVhw&list=PLPZvHabFOP0HiKQSlbRnmZLVD8KELuqnG" frameborder="0" allowfullscreen></iframe>
+
 
 ## News  
 
