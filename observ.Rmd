@@ -31,7 +31,7 @@ map_leaflet(x = partners)
 
 ## What do we do at OBServ?
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=QTuf3uoyVhw&list=PLPZvHabFOP0HiKQSlbRnmZLVD8KELuqnG" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed?v=QTuf3uoyVhw" frameborder="0" allowfullscreen></iframe>
 
 
 ## News  
