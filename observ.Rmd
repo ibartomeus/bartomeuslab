@@ -29,8 +29,13 @@ partners <- data.frame(name = c("EBD-CSIC", "BC3", "Wageningen", "Rutgers", "Rio
 map_leaflet(x = partners) 
 ```
 
+## What we do at OBServ?
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=QTuf3uoyVhw&list=PLPZvHabFOP0HiKQSlbRnmZLVD8KELuqnG&index=20" frameborder="0" allowfullscreen></iframe>
+
 ## News  
 
+* [Twitter chat](https://wakelet.com/wake/FgcLUM2b_fYkon5QvGufu) about pollination services
 * Our 2020 anual meeting was all virtual due to the pandemic, but it was a success!
 * We are launching a **[Global Crop Pollintion Database](croppollination.html)**
 * OBServ was highly represented at [ECOFLOR 2020](https://ecoflor2020.weebly.com/)
