@@ -133,26 +133,24 @@ ambientales de los campos de cultivo.
 
 ## <span style="color:darkgreen"> Quiénes participamos </span> 
 
-En este mapa iremos situando los actores implicados. De momento, ya contamos con el coordinador, la Estación Biológica de Doñana, con una empresa tecnologica de agricultira de precisión y con la ong [Abejas Silvestres](http://www.abejassilvestres.es).
-
+En este mapa iremos situando los actores implicados. 
+Contamos con la participación de la Estación Biológica de Doñana, la empresa tecnologica de agricultura de precisión PlantPy y con la ong [Abejas Silvestres](http://www.abejassilvestres.es).
+En nuestra comunidad de agricultores ya participan: Royal, Primor, SAT San Sebastián y Alcafruit. 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(ggplot2)
 library(leaflet)
 library(leaflet.extras)
 library(mapr) #Añadir cortijo el puerto? Techcrop?
-crop_map <- data.frame(name = c("EBD-CSIC", "PlantPy", "AbejasSilvestres.es"),
-                       actor = c("investigación", "empresa", "ong"),
-                       latitude = c(37.4121, 37.4762, 37.3873), 
-                       longitude= c(-6.0056, -5.9519, -6.0386))
+crop_map <- data.frame(name = c("EBD-CSIC", "PlantPy", "AbejasSilvestres.es", 
+                                "Royal", "Primor", "SAT San Sebastian", "Alcafruit"),
+                       actor = c("investigación", "empresa", "ong", "agricultores",     "agricultores", "agricultores", "agricultores"),
+                       latitude = c(37.4121, 37.4762, 37.3873, 37.4878, 37.5430, 37.5187, 37.5853), 
+                       longitude= c(-6.0056, -5.9519, -6.0386, -5.9418, -5.9418, -5.9796, -5.9654))
 # Running a call to ggplotly prior to leaflet seems to fix the problem.
 plotly::ggplotly(ggplot())
-<<<<<<< HEAD
-m <- map_leaflet(x = crop_map, color = c("red", "blue", "green")) %>% addTiles(urlTemplate = "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png")
+m <- map_leaflet(x = crop_map, color = c("red", "blue", "green", "orange", "orange", "orange", "orange")) %>% addTiles(urlTemplate = "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png")
 m
-=======
-m <- map_leaflet(x = crop_map, color = c("red", "blue", "green"))
-m %>% addTiles(urlTemplate = "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png")
->>>>>>> 1ee6f538fb08767bead594f3a7fcb184e4523ec6
+
 ```
 
 
@@ -172,8 +170,9 @@ m %>% addTiles(urlTemplate = "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 <img src="media/AAS.png" alt="logo" width="200"/>
 <img src="media/Logo-EBD.jpg" alt="logo" width="200"/>
 <img src="media/plantpy.png" alt="logo" width="200"/>
-
-
-
-
+<img src="media/Anecoop.jpg" alt="logo" width="180"/>
+<img src="media/primor.jpeg" alt="logo" width="180"/>
+<img src="media/royal.png" alt="logo" width="180"/>
+<img src="media/sansebastian.jpg" alt="logo" width="180"/>
+<img src="media/alcafruit.jpg" alt="logo" width="180"/>
 
