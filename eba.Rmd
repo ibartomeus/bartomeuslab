@@ -49,15 +49,11 @@ Formamos parte del proyecto internacional [**SHOWCASE**](https://showcase-projec
   
 
 
-En este proyecto participan más de 20 instituciones públicas y privadas en toda Europa 
-de 10 países. Se trata de un proyecto interdisciplinar que pretende exponer las sinergias entre la agricultura, la biodiversidad y los servicios de los ecosistemas para ayudar a
-los agricultores a capitalizar la biodiversidad local.
+En este proyecto participan más de 20 instituciones públicas y privadas de 10 países europeos. Se trata de un proyecto interdisciplinar que pretende exponer las sinergias entre la agricultura, la biodiversidad y los servicios de los ecosistemas para ayudar a los agricultores a capitalizar la biodiversidad local.
 
-El **objetivo principal** de este proyecto es **hacer la biodiversidad** una **parte**
-**integral** de la **agricultura europea**.
+El **objetivo principal** de este proyecto es **hacer la biodiversidad** una **parte** **integral** de la **agricultura europea**.
 
-Persigue identificar incentivos para promover la biodiversidad en la agricultura, mostrar evidencias de los beneficios que ello conlleva y comunicar tanto principios como buenas
-prácticas a agricultores, políticos y la sociedad en general.
+Persigue identificar incentivos para promover la biodiversidad en la agricultura, mostrar evidencias de los beneficios que ello conlleva y comunicar tanto principios como buenas prácticas a agricultores, políticos y la sociedad en general.
 
 ## <span style="color:darkgreen"> ¿Qué buscamos? </span> 
 
@@ -66,15 +62,11 @@ participar activamente en la comunidad piloto Gualquivida.
 
 >Estamos localizando:
 >
-      * Grupo de **20-30 agricultores de frutas de hueso en la Vega del Guadalquivir**
-        que estén dispuestos a implementar medidas co-diseñadas e innovadoras en sus fincas.
-      * **Gente del sector** de frutas de hueso, tanto personas como
-        organizaciones **que quieran compartir su experiencia**, y colaborar en
-        el desarrollo del proyecto.
+      * Grupo de **20-30 agricultores de frutas de hueso en la Vega del Guadalquivir** que estén dispuestos a implementar medidas co-diseñadas e innovadoras en sus fincas.
+      * **Gente del sector** de frutas de hueso, tanto personas como organizaciones **que quieran compartir su experiencia**, y colaborar en el desarrollo del proyecto.
         
         
-La comunidad **Guadalquivida** desarrollará **investigación activa y colaborativa** durante el periodo 2021-2023. Esta comunidad será un espacio donde compartir conocimiento y buscar soluciones en común. Entre todos, identificaremos las necesidades y codiseñaremos medidas
-eficaces, que integren los intereses de la producción, los beneficios que ofrece la biodiversidad para ello y que ayuden a conservar la naturaleza.
+La comunidad **Guadalquivida** desarrollará **investigación activa y colaborativa** durante el periodo 2021-2023. Esta comunidad será un espacio donde compartir conocimiento y buscar soluciones en común. Entre todos, identificaremos las necesidades y codiseñaremos medidas eficaces, que integren los intereses de la producción, los beneficios que ofrece la biodiversidad para ello y que ayuden a conservar la naturaleza.
 
 Nos gustaría que esta comunidad sirva de ejemplo y se convierta en un modelo a seguir.
 
@@ -135,7 +127,7 @@ ambientales de los campos de cultivo.
 
 En este mapa iremos situando los actores implicados. 
 Contamos con la participación de la Estación Biológica de Doñana, la empresa tecnologica de agricultura de precisión PlantPy y con la ong [Abejas Silvestres](http://www.abejassilvestres.es).
-En nuestra comunidad de agricultores ya participan: Royal, Primor, SAT San Sebastián y Alcafruit. 
+En nuestra comunidad de agricultores ya participan las siguientes empresas y cooperativas de agricultores: Royal, Primor, SAT San Sebastián y Alcafruit. 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(ggplot2)
 library(plotly)
@@ -150,8 +142,7 @@ crop_map <- data.frame(name = c("EBD-CSIC", "PlantPy", "AbejasSilvestres.es",
 # Running a call to ggplotly prior to leaflet seems to fix the problem.
 
 plotly::ggplotly(ggplot())
-m <- map_leaflet(x = crop_map, color = c("red", "blue", "green", "orange", "orange", "orange", "orange")) %>% addTiles(urlTemplate = "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png")
-m
+map_leaflet(x = crop_map, color = c("red", "blue", "green", "orange", "orange", "orange", "orange")) %>% addTiles(urlTemplate = "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png")
 
 ```
 
