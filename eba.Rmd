@@ -138,6 +138,7 @@ Contamos con la participación de la Estación Biológica de Doñana, la empresa
 En nuestra comunidad de agricultores ya participan: Royal, Primor, SAT San Sebastián y Alcafruit. 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(ggplot2)
+library(plotly)
 library(leaflet)
 library(leaflet.extras)
 library(mapr) #Añadir cortijo el puerto? Techcrop?
@@ -147,6 +148,7 @@ crop_map <- data.frame(name = c("EBD-CSIC", "PlantPy", "AbejasSilvestres.es",
                        latitude = c(37.4121, 37.4762, 37.3873, 37.4878, 37.5430, 37.5187, 37.5853), 
                        longitude= c(-6.0056, -5.9519, -6.0386, -5.9418, -5.9418, -5.9796, -5.9654))
 # Running a call to ggplotly prior to leaflet seems to fix the problem.
+
 plotly::ggplotly(ggplot())
 m <- map_leaflet(x = crop_map, color = c("red", "blue", "green", "orange", "orange", "orange", "orange")) %>% addTiles(urlTemplate = "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png")
 m
