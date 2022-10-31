@@ -24,7 +24,7 @@ library(BeeFunData)
 data(sites)
 #head(sites)
 library(mapr)
-sites$name <- as.character(sites$Site_ID)
+sites$name <- as.character(sites$Siye_ID)
 map_leaflet(x = sites[,-1])
 ```
 

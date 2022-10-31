@@ -128,6 +128,7 @@ ambientales de los campos de cultivo.
 En este mapa iremos situando los actores implicados. 
 Contamos con la participación de la Estación Biológica de Doñana, la empresa tecnologica de agricultura de precisión PlantPy y con la ong [Abejas Silvestres](http://www.abejassilvestres.es).
 En nuestra comunidad de agricultores ya participan las siguientes empresas y cooperativas de agricultores: Royal, Primor, SAT San Sebastián y Alcafruit. 
+
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(ggplot2)
 library(plotly)
@@ -141,7 +142,7 @@ crop_map <- data.frame(name = c("EBD-CSIC", "PlantPy", "AbejasSilvestres.es",
                        longitude= c(-6.0056, -5.9519, -6.0386, -5.9418, -5.9418, -5.9796, -5.9654))
 # Running a call to ggplotly prior to leaflet seems to fix the problem.
 
-plotly::ggplotly(ggplot())
+#plotly::ggplotly(ggplot())
 map_leaflet(x = crop_map, color = c("red", "blue", "green", "orange", "orange", "orange", "orange")) %>% addTiles(urlTemplate = "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png")
 
 ```

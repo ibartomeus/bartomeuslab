@@ -13,13 +13,22 @@
 
 <title>SIMPLEX + LINCX:</title>
 
-<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -36,11 +45,6 @@
     </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -53,32 +57,7 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
 
 
 
@@ -89,10 +68,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -109,40 +84,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -170,7 +121,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -182,7 +133,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -193,10 +144,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -208,7 +172,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -275,7 +238,7 @@ $(document).ready(function () {
 <div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -286,21 +249,21 @@ $(document).ready(function () {
       <ul class="nav navbar-nav">
         <li>
   <a href="beefun.html">
-    <span class="fas fa-info"></span>
+    <span class="fa fa-info"></span>
      
     Beefun
   </a>
 </li>
 <li>
   <a href="observ.html">
-    <span class="fas fa-info"></span>
+    <span class="fa fa-info"></span>
      
     OBServ
   </a>
 </li>
 <li>
   <a href="eba.html">
-    <span class="fas fa-info"></span>
+    <span class="fa fa-info"></span>
      
     Guadalquivida
   </a>
@@ -309,21 +272,21 @@ $(document).ready(function () {
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="http://www.bartomeuslab.com">
-    <span class="fas fa-home"></span>
+    <span class="fa fa-home"></span>
      
     Bartomeus lab
   </a>
 </li>
 <li>
   <a href="mailto:nacho.bartomeus@gmail.com">
-    <span class="fas fa-envelope-o"></span>
+    <span class="fa fa-envelope-o"></span>
      
     Contact me
   </a>
 </li>
 <li>
   <a href="https://github.com/ibartomeus">
-    <span class="fas fa-github"></span>
+    <span class="fa fa-github"></span>
      
     GitHub
   </a>
@@ -333,7 +296,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -342,36 +305,66 @@ $(document).ready(function () {
 </div>
 
 
-<div id="lincx-linking-network-structure-and-species-coexistence." class="section level2">
+<div id="lincx-linking-network-structure-and-species-coexistence."
+class="section level2">
 <h2>LINCX: Linking Network structure and species CoeXistence.</h2>
 </div>
-<div id="simplex-simple-models-that-capture-the-complexity-of-multi-species-coexistence" class="section level2">
-<h2>SIMPLEX: Simple models that capture the complexity of multi-species coexistence</h2>
-<p><strong>Explora ciencia projects</strong> CGL2014-61590-EXP and CGL2017-92436-EXP.<br />
+<div
+id="simplex-simple-models-that-capture-the-complexity-of-multi-species-coexistence"
+class="section level2">
+<h2>SIMPLEX: Simple models that capture the complexity of multi-species
+coexistence</h2>
+<p><strong>Explora ciencia projects</strong> CGL2014-61590-EXP and
+CGL2017-92436-EXP.<br />
 <strong>Researchers: Ignasi Bartomeus and Oscar Godoy</strong></p>
-<p>This two linked projects explore how we can add multitrophic complexity to species coexistence models.</p>
-<p><strong>Lincx</strong> put forward the fundational theoretical work (Godoy et al 2019), and tested the models with experimental (Bartomeus et al. 2021) and observational data (Lanuza et al 2019).</p>
+<p>This two linked projects explore how we can add multitrophic
+complexity to species coexistence models.</p>
+<p><strong>Lincx</strong> put forward the fundational theoretical work
+(Godoy et al 2019), and tested the models with experimental (Bartomeus
+et al. 2021) and observational data (Lanuza et al 2019).</p>
 <p>Papers:</p>
 <ul>
-<li>Godoy, O., Bartomeus, I., Rohr, R. P., &amp; Saavedra, S. (2018). Towards the integration of niche and network theories. Trends in Ecology &amp; Evolution, 33(4), 287-300.<br />
+<li>Godoy, O., Bartomeus, I., Rohr, R. P., &amp; Saavedra, S. (2018).
+Towards the integration of niche and network theories. Trends in Ecology
+&amp; Evolution, 33(4), 287-300.<br />
 </li>
-<li>Lanuza, J. B., Bartomeus, I., &amp; Godoy, O. (2018). Opposing effects of floral visitors and soil conditions on the determinants of competitive outcomes maintain species diversity in heterogeneous landscapes. Ecology Letters, 21(6), 865-874.<br />
+<li>Lanuza, J. B., Bartomeus, I., &amp; Godoy, O. (2018). Opposing
+effects of floral visitors and soil conditions on the determinants of
+competitive outcomes maintain species diversity in heterogeneous
+landscapes. Ecology Letters, 21(6), 865-874.<br />
 </li>
-<li>Bartomeus, I., &amp; Godoy, O. (2018). Biotic controls of plant coexistence. Journal of Ecology, 106(5), 1767-1772.<br />
+<li>Bartomeus, I., &amp; Godoy, O. (2018). Biotic controls of plant
+coexistence. Journal of Ecology, 106(5), 1767-1772.<br />
 </li>
-<li>Bartomeus, I., Saavedra, S., Rohr, R.P. and Godoy, O., 2021. Experimental evidence of the importance of multitrophic structure for species persistence. Proceedings of the National Academy of Sciences, 118(12).</li>
+<li>Bartomeus, I., Saavedra, S., Rohr, R.P. and Godoy, O., 2021.
+Experimental evidence of the importance of multitrophic structure for
+species persistence. Proceedings of the National Academy of Sciences,
+118(12).</li>
 <li>Busche, Bartomeus, Godoy. Higher Order Interactions. In Prep.</li>
 </ul>
-<p><strong>SIMPLEX</strong> tries to operationalyze those models (Martin et al 2021), make them useful (Garcia-Callejas et al 2020), and predictive (Civantos et al 2021).</p>
+<p><strong>SIMPLEX</strong> tries to operationalyze those models (Martin
+et al 2021), make them useful (Garcia-Callejas et al 2020), and
+predictive (Civantos et al 2021).</p>
 <p>Papers:</p>
 <ul>
-<li>García‐Callejas, D., Godoy, O., &amp; Bartomeus, I. cxr: A toolbox for modelling species coexistence in R. Methods in Ecology and Evolution. In press.<br />
-R Package: <a href="https://github.com/RadicalCommEcol/cxr" class="uri">https://github.com/RadicalCommEcol/cxr</a><br />
+<li>García‐Callejas, D., Godoy, O., &amp; Bartomeus, I. cxr: A toolbox
+for modelling species coexistence in R. Methods in Ecology and
+Evolution. In press.<br />
+R Package: <a href="https://github.com/RadicalCommEcol/cxr"
+class="uri">https://github.com/RadicalCommEcol/cxr</a><br />
 </li>
-<li>Civantos, I., García-Algarra, J., García-Callejas, D., Galeano, J., Godoy, O. and Bartomeus, I., 2021. Fine scale prediction of ecological community composition using a two-step sequential machine learning ensemble. bioRxiv.</li>
-<li>Garcia-Callejas, Hurtado, Godoy, Bartomeus. The multilayer structure of plant-pollinator-herbivore networks. In prep.<br />
+<li>Civantos, I., García-Algarra, J., García-Callejas, D., Galeano, J.,
+Godoy, O. and Bartomeus, I., 2021. Fine scale prediction of ecological
+community composition using a two-step sequential machine learning
+ensemble. bioRxiv.</li>
+<li>Garcia-Callejas, Hurtado, Godoy, Bartomeus. The multilayer structure
+of plant-pollinator-herbivore networks. In prep.<br />
 </li>
-<li>Martyn, T.E., Stouffer, D.B., Godoy, O., Bartomeus, I., Pastore, A.I. and Mayfield, M.M., 2021. Identifying “Useful” Fitness Models: Balancing the Benefits of Added Complexity with Realistic Data Requirements in Models of Individual Plant Fitness. The American Naturalist, 197(4), pp.415-433.</li>
+<li>Martyn, T.E., Stouffer, D.B., Godoy, O., Bartomeus, I., Pastore,
+A.I. and Mayfield, M.M., 2021. Identifying “Useful” Fitness Models:
+Balancing the Benefits of Added Complexity with Realistic Data
+Requirements in Models of Individual Plant Fitness. The American
+Naturalist, 197(4), pp.415-433.</li>
 </ul>
 </div>
 
@@ -402,7 +395,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

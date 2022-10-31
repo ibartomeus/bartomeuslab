@@ -13,8 +13,8 @@
 
 <title>Guadalquivida</title>
 
-<script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
-<script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -33,19 +33,13 @@
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
-<script src="site_libs/plotly-binding-4.9.4.1/plotly.js"></script>
-<script src="site_libs/typedarray-0.1/typedarray.min.js"></script>
-<link href="site_libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
-<script src="site_libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
-<link href="site_libs/plotly-htmlwidgets-css-1.57.1/plotly-htmlwidgets.css" rel="stylesheet" />
-<script src="site_libs/plotly-main-1.57.1/plotly-latest.min.js"></script>
 <link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
 <script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
 <link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
 <script src="site_libs/proj4-2.6.2/proj4.min.js"></script>
 <script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
 <link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
-<script src="site_libs/leaflet-binding-2.0.4.1/leaflet.js"></script>
+<script src="site_libs/leaflet-binding-2.1.1/leaflet.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
@@ -76,6 +70,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -96,6 +91,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -248,7 +246,7 @@ $(document).ready(function () {
 <div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -259,21 +257,21 @@ $(document).ready(function () {
       <ul class="nav navbar-nav">
         <li>
   <a href="beefun.html">
-    <span class="fas fa-info"></span>
+    <span class="fa fa-info"></span>
      
     Beefun
   </a>
 </li>
 <li>
   <a href="observ.html">
-    <span class="fas fa-info"></span>
+    <span class="fa fa-info"></span>
      
     OBServ
   </a>
 </li>
 <li>
   <a href="eba.html">
-    <span class="fas fa-info"></span>
+    <span class="fa fa-info"></span>
      
     Guadalquivida
   </a>
@@ -282,21 +280,21 @@ $(document).ready(function () {
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="http://www.bartomeuslab.com">
-    <span class="fas fa-home"></span>
+    <span class="fa fa-home"></span>
      
     Bartomeus lab
   </a>
 </li>
 <li>
   <a href="mailto:nacho.bartomeus@gmail.com">
-    <span class="fas fa-envelope-o"></span>
+    <span class="fa fa-envelope-o"></span>
      
     Contact me
   </a>
 </li>
 <li>
   <a href="https://github.com/ibartomeus">
-    <span class="fas fa-github"></span>
+    <span class="fa fa-github"></span>
      
     GitHub
   </a>
@@ -329,30 +327,65 @@ $(document).ready(function () {
 <div id="frutales-llenos-de-vida" class="section level1">
 <h1><span style="color:darkgreen"> Frutales llenos de vida </span></h1>
 <blockquote>
-<p>Frutas cultivadas de manera <strong>rentable</strong> y <strong>sostenible</strong>, haciendo un uso coherente de los recursos y aprovechando los beneficios de la naturaleza para crear paisajes biodiversos.</p>
+<p>Frutas cultivadas de manera <strong>rentable</strong> y
+<strong>sostenible</strong>, haciendo un uso coherente de los recursos y
+aprovechando los beneficios de la naturaleza para crear paisajes
+biodiversos.</p>
 </blockquote>
 <div id="quiénes-somos" class="section level2">
 <h2><span style="color:darkgreen"> ¿Quiénes somos? </span></h2>
-<p>Somos un grupo de <strong>investigadores del CSIC</strong> (Estación Biológica de Doñana)</p>
+<p>Somos un grupo de <strong>investigadores del CSIC</strong> (Estación
+Biológica de Doñana)</p>
 <p><em>Coordinador:</em> Ignasi Bartomeus</p>
-<p>Formamos parte del proyecto internacional <a href="https://showcase-project.eu/"><strong>SHOWCASE</strong></a>(programa europeo H2020: 2021-2025).</p>
-<p>En este proyecto participan más de 20 instituciones públicas y privadas en toda Europa de 10 países. Se trata de un proyecto interdisciplinar que pretende exponer las sinergias entre la agricultura, la biodiversidad y los servicios de los ecosistemas para ayudar a los agricultores a capitalizar la biodiversidad local.</p>
-<p>El <strong>objetivo principal</strong> de este proyecto es <strong>hacer la biodiversidad</strong> una <strong>parte</strong> <strong>integral</strong> de la <strong>agricultura europea</strong>.</p>
-<p>Persigue identificar incentivos para promover la biodiversidad en la agricultura, mostrar evidencias de los beneficios que ello conlleva y comunicar tanto principios como buenas prácticas a agricultores, políticos y la sociedad en general.</p>
+<p>Formamos parte del proyecto internacional <a
+href="https://showcase-project.eu/"><strong>SHOWCASE</strong></a>(programa
+europeo H2020: 2021-2025).</p>
+<p>En este proyecto participan más de 20 instituciones públicas y
+privadas de 10 países europeos. Se trata de un proyecto interdisciplinar
+que pretende exponer las sinergias entre la agricultura, la
+biodiversidad y los servicios de los ecosistemas para ayudar a los
+agricultores a capitalizar la biodiversidad local.</p>
+<p>El <strong>objetivo principal</strong> de este proyecto es
+<strong>hacer la biodiversidad</strong> una <strong>parte</strong>
+<strong>integral</strong> de la <strong>agricultura
+europea</strong>.</p>
+<p>Persigue identificar incentivos para promover la biodiversidad en la
+agricultura, mostrar evidencias de los beneficios que ello conlleva y
+comunicar tanto principios como buenas prácticas a agricultores,
+políticos y la sociedad en general.</p>
 </div>
 <div id="qué-buscamos" class="section level2">
 <h2><span style="color:darkgreen"> ¿Qué buscamos? </span></h2>
-<p><strong>Agricultores de frutas de hueso</strong> y cooperativas del sector interesados en participar activamente en la comunidad piloto Gualquivida.</p>
+<p><strong>Agricultores de frutas de hueso</strong> y cooperativas del
+sector interesados en participar activamente en la comunidad piloto
+Gualquivida.</p>
 <blockquote>
 <p>Estamos localizando:</p>
 <ul>
-<li>Grupo de <strong>20-30 agricultores de frutas de hueso en la Vega del Guadalquivir</strong> que estén dispuestos a implementar medidas co-diseñadas e innovadoras en sus fincas.</li>
-<li><strong>Gente del sector</strong> de frutas de hueso, tanto personas como organizaciones <strong>que quieran compartir su experiencia</strong>, y colaborar en el desarrollo del proyecto.</li>
+<li>Grupo de <strong>20-30 agricultores de frutas de hueso en la Vega
+del Guadalquivir</strong> que estén dispuestos a implementar medidas
+co-diseñadas e innovadoras en sus fincas.</li>
+<li><strong>Gente del sector</strong> de frutas de hueso, tanto personas
+como organizaciones <strong>que quieran compartir su
+experiencia</strong>, y colaborar en el desarrollo del proyecto.</li>
 </ul>
 </blockquote>
-<p>La comunidad <strong>Guadalquivida</strong> desarrollará <strong>investigación activa y colaborativa</strong> durante el periodo 2021-2023. Esta comunidad será un espacio donde compartir conocimiento y buscar soluciones en común. Entre todos, identificaremos las necesidades y codiseñaremos medidas eficaces, que integren los intereses de la producción, los beneficios que ofrece la biodiversidad para ello y que ayuden a conservar la naturaleza.</p>
-<p>Nos gustaría que esta comunidad sirva de ejemplo y se convierta en un modelo a seguir.</p>
-<p>Otros agentes y organizaciones que tengan relación con el sector serán también invitadas a la comunidad, para un diálogo abierto sobre los objetivos del proyecto. Conjuntamente ingeniaremos respuestas a los retos económicos, sociales y ecológicos de la zona. Para ello se realizarán talleres, entrevistas, cuestionarios cortos, desarrollo de prácticas y otras actividades. La participación podrá variar según los intereses y la disponibilidad.</p>
+<p>La comunidad <strong>Guadalquivida</strong> desarrollará
+<strong>investigación activa y colaborativa</strong> durante el periodo
+2021-2023. Esta comunidad será un espacio donde compartir conocimiento y
+buscar soluciones en común. Entre todos, identificaremos las necesidades
+y codiseñaremos medidas eficaces, que integren los intereses de la
+producción, los beneficios que ofrece la biodiversidad para ello y que
+ayuden a conservar la naturaleza.</p>
+<p>Nos gustaría que esta comunidad sirva de ejemplo y se convierta en un
+modelo a seguir.</p>
+<p>Otros agentes y organizaciones que tengan relación con el sector
+serán también invitadas a la comunidad, para un diálogo abierto sobre
+los objetivos del proyecto. Conjuntamente ingeniaremos respuestas a los
+retos económicos, sociales y ecológicos de la zona. Para ello se
+realizarán talleres, entrevistas, cuestionarios cortos, desarrollo de
+prácticas y otras actividades. La participación podrá variar según los
+intereses y la disponibilidad.</p>
 </div>
 <div id="qué-ofrecemos" class="section level2">
 <h2><span style="color:darkgreen"> ¿Qué ofrecemos? </span></h2>
@@ -361,53 +394,108 @@ $(document).ready(function () {
 <ul>
 <li>Proveer con información relevante basada en evidencias solidas.</li>
 <li>Acompañar en el co-diseño de medidas innovadoras.</li>
-<li>Recursos en la medida de nuestras posibilidades para la implementación exitosa de medidas. No ofrecemos subsidios directos.</li>
+<li>Recursos en la medida de nuestras posibilidades para la
+implementación exitosa de medidas. No ofrecemos subsidios directos.</li>
 <li>Evaluación de los resultados de forma rigurosa.</li>
 <li>Identificar conclusiones eficaces.</li>
 </ul>
 </blockquote>
-<p>Ofrecemos un <strong>asesoramiento basado en evidencias</strong> y la oportunidad de beneficiarse de compartir recursos y experiencias. También, ayudaremos a visibilizar el sector como comprometido con el medioambiente y hacer llegar las necesidades a las personas que diseñan las políticas agrarias en Europa.</p>
+<p>Ofrecemos un <strong>asesoramiento basado en evidencias</strong> y la
+oportunidad de beneficiarse de compartir recursos y experiencias.
+También, ayudaremos a visibilizar el sector como comprometido con el
+medioambiente y hacer llegar las necesidades a las personas que diseñan
+las políticas agrarias en Europa.</p>
 </div>
 <div id="algunas-ideas-que-ya-han-ido-surgiendo" class="section level2">
-<h2><span style="color:darkgreen"> Algunas ideas que ya han ido surgiendo </span></h2>
-<p>En las conversaciones que ya estamos teniendo con agricultores y cooperativas han surgido algunas ideas y propuestas, por ejemplo:</p>
+<h2><span style="color:darkgreen"> Algunas ideas que ya han ido
+surgiendo </span></h2>
+<p>En las conversaciones que ya estamos teniendo con agricultores y
+cooperativas han surgido algunas ideas y propuestas, por ejemplo:</p>
 <blockquote>
 <ul>
-<li>Desarrollar herramientas sencillas para medir el potencial polinizador de las fincas.</li>
-<li>Evaluación de costes y beneficios de cubiertas y otras infraestructuras verdes como bandas florales.</li>
+<li>Desarrollar herramientas sencillas para medir el potencial
+polinizador de las fincas.</li>
+<li>Evaluación de costes y beneficios de cubiertas y otras
+infraestructuras verdes como bandas florales.</li>
 <li>Optimizar el uso del agua.</li>
 <li>Etiquetado y estrategias de diferenciación de mercado.</li>
 </ul>
 </blockquote>
-<p><strong>Estamos abiertos y encantados de escuchar vuestras ideas.</strong></p>
+<p><strong>Estamos abiertos y encantados de escuchar vuestras
+ideas.</strong></p>
 </div>
 <div id="quieres-participar" class="section level2">
 <h2><span style="color:darkgreen"> ¿Quieres participar? </span></h2>
-<p>Para crear esta comunidad nos hemos centrado en el Valle del Guadalquivir. Si eres agricultor, cooperativa, ONG, o cualquier agente involucrado y quieres participar contacta con <a href="mailto:guadalquivida@gmail.com" class="email">guadalquivida@gmail.com</a>. Hay muchas maneras de participar, desde dejar oír tu voz, hasta involucrarte implementando las medidas co-diseñadas en tu campo. El único objetivo es que este proyecto sea útil para todos, así que participar en una oportunidad de beneficiarse de recursos y experiencia compartida.</p>
+<p>Para crear esta comunidad nos hemos centrado en el Valle del
+Guadalquivir. Si eres agricultor, cooperativa, ONG, o cualquier agente
+involucrado y quieres participar contacta con <a
+href="mailto:guadalquivida@gmail.com"
+class="email">guadalquivida@gmail.com</a>. Hay muchas maneras de
+participar, desde dejar oír tu voz, hasta involucrarte implementando las
+medidas co-diseñadas en tu campo. El único objetivo es que este proyecto
+sea útil para todos, así que participar en una oportunidad de
+beneficiarse de recursos y experiencia compartida.</p>
 </div>
 <div id="nuestros-intereses" class="section level2">
 <h2><span style="color:darkgreen"> Nuestros intereses </span></h2>
-<p>Queremos <strong>dar voz, visibilizar y mostrar evidencias</strong> sobre una manera de cultivar que permita conservar la naturaleza en los agroecosistemas. Nuestro objetivo es acompañar y apoyar a agricultores en la producción de alimentos de manera rentable, aprovechando los recursos naturales de manera coherente y creando paisajes diversos. Queremos <strong>fomentar una agricultura con sentido común</strong>. Es decir, una agricultura que piensa a largo plazo, que está comprometida con el medioambiente, pero que no se olvide de los agricultores, fomente la viabilidad productiva y favorezca los beneficios económicos, sociales y ambientales de los campos de cultivo.</p>
+<p>Queremos <strong>dar voz, visibilizar y mostrar evidencias</strong>
+sobre una manera de cultivar que permita conservar la naturaleza en los
+agroecosistemas. Nuestro objetivo es acompañar y apoyar a agricultores
+en la producción de alimentos de manera rentable, aprovechando los
+recursos naturales de manera coherente y creando paisajes diversos.
+Queremos <strong>fomentar una agricultura con sentido común</strong>. Es
+decir, una agricultura que piensa a largo plazo, que está comprometida
+con el medioambiente, pero que no se olvide de los agricultores, fomente
+la viabilidad productiva y favorezca los beneficios económicos, sociales
+y ambientales de los campos de cultivo.</p>
 </div>
 <div id="quiénes-participamos" class="section level2">
 <h2><span style="color:darkgreen"> Quiénes participamos </span></h2>
-<p>En este mapa iremos situando los actores implicados. Contamos con la participación de la Estación Biológica de Doñana, la empresa tecnologica de agricultura de precisión PlantPy y con la ong <a href="http://www.abejassilvestres.es">Abejas Silvestres</a>. En nuestra comunidad de agricultores ya participan: Royal, Primor, SAT San Sebastián y Alcafruit.</p>
-<div id="htmlwidget-10d70a7f485c2fd19924" style="width:672px;height:480px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-10d70a7f485c2fd19924">{"x":{"data":[{"visible":false,"showlegend":false,"xaxis":null,"yaxis":null,"hoverinfo":"text","frame":null}],"layout":{"margin":{"t":26.2283105022831,"r":7.30593607305936,"b":13.8812785388128,"l":10.958904109589},"plot_bgcolor":"rgba(235,235,235,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.05,1.05],"tickmode":"array","ticktext":[],"tickvals":[],"categoryorder":"array","categoryarray":[],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.05,1.05],"tickmode":"array","ticktext":[],"tickvals":[],"categoryorder":"array","categoryarray":[],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","showSendToCloud":false},"source":"A","attrs":{"1764227106f1":{"type":"scatter"}},"cur_data":"1764227106f1","visdat":{"1764227106f1":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
-<div id="htmlwidget-47ee33d9c6770c0d7f85" style="width:672px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-47ee33d9c6770c0d7f85">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addCircleMarkers","args":[[37.3873,37.5853,37.4121,37.4762,37.543,37.4878,37.5187],[-6.0386,-5.9654,-6.0056,-5.9519,-5.9418,-5.9418,-5.9796],13,null,null,{"interactive":true,"className":"","stroke":true,"color":["green","orange","red","blue","orange","orange","orange"],"weight":5,"opacity":0.5,"fill":true,"fillColor":["green","orange","red","blue","orange","orange","orange"],"fillOpacity":0.2},null,null,["<table>\n<tr><td><strong>name<\/strong><\/td><td>AbejasSilvestres.es<\/td><\/tr>\n<tr><td><strong>actor<\/strong><\/td><td>ong<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>37.3873<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-6.0386<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>green<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Alcafruit<\/td><\/tr>\n<tr><td><strong>actor<\/strong><\/td><td>agricultores<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>37.5853<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-5.9654<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>orange<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>EBD-CSIC<\/td><\/tr>\n<tr><td><strong>actor<\/strong><\/td><td>investigación<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>37.4121<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-6.0056<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>red<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>PlantPy<\/td><\/tr>\n<tr><td><strong>actor<\/strong><\/td><td>empresa<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>37.4762<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-5.9519<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>blue<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Primor<\/td><\/tr>\n<tr><td><strong>actor<\/strong><\/td><td>agricultores<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>37.543<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-5.9418<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>orange<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Royal<\/td><\/tr>\n<tr><td><strong>actor<\/strong><\/td><td>agricultores<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>37.4878<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-5.9418<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>orange<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>SAT San Sebastian<\/td><\/tr>\n<tr><td><strong>actor<\/strong><\/td><td>agricultores<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>37.5187<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-5.9796<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>orange<\/td><\/tr>\n<\/table>"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addTiles","args":["http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false}]}],"limits":{"lat":[37.3873,37.5853],"lng":[-6.0386,-5.9418]}},"evals":[],"jsHooks":[]}</script>
+<p>En este mapa iremos situando los actores implicados. Contamos con la
+participación de la Estación Biológica de Doñana, la empresa tecnologica
+de agricultura de precisión PlantPy y con la ong <a
+href="http://www.abejassilvestres.es">Abejas Silvestres</a>. En nuestra
+comunidad de agricultores ya participan las siguientes empresas y
+cooperativas de agricultores: Royal, Primor, SAT San Sebastián y
+Alcafruit.</p>
+<div id="htmlwidget-cf795e5188eac550b386" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-cf795e5188eac550b386">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addCircleMarkers","args":[[37.3873,37.5853,37.4121,37.4762,37.543,37.4878,37.5187],[-6.0386,-5.9654,-6.0056,-5.9519,-5.9418,-5.9418,-5.9796],13,null,null,{"interactive":true,"className":"","stroke":true,"color":["green","orange","red","blue","orange","orange","orange"],"weight":5,"opacity":0.5,"fill":true,"fillColor":["green","orange","red","blue","orange","orange","orange"],"fillOpacity":0.2},null,null,["<table>\n<tr><td><strong>name<\/strong><\/td><td>AbejasSilvestres.es<\/td><\/tr>\n<tr><td><strong>actor<\/strong><\/td><td>ong<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>37.3873<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-6.0386<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>green<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Alcafruit<\/td><\/tr>\n<tr><td><strong>actor<\/strong><\/td><td>agricultores<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>37.5853<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-5.9654<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>orange<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>EBD-CSIC<\/td><\/tr>\n<tr><td><strong>actor<\/strong><\/td><td>investigación<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>37.4121<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-6.0056<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>red<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>PlantPy<\/td><\/tr>\n<tr><td><strong>actor<\/strong><\/td><td>empresa<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>37.4762<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-5.9519<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>blue<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Primor<\/td><\/tr>\n<tr><td><strong>actor<\/strong><\/td><td>agricultores<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>37.543<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-5.9418<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>orange<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>Royal<\/td><\/tr>\n<tr><td><strong>actor<\/strong><\/td><td>agricultores<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>37.4878<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-5.9418<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>orange<\/td><\/tr>\n<\/table>","<table>\n<tr><td><strong>name<\/strong><\/td><td>SAT San Sebastian<\/td><\/tr>\n<tr><td><strong>actor<\/strong><\/td><td>agricultores<\/td><\/tr>\n<tr><td><strong>latitude<\/strong><\/td><td>37.5187<\/td><\/tr>\n<tr><td><strong>longitude<\/strong><\/td><td>-5.9796<\/td><\/tr>\n<tr><td><strong>color<\/strong><\/td><td>orange<\/td><\/tr>\n<\/table>"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addTiles","args":["http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false}]}],"limits":{"lat":[37.3873,37.5853],"lng":[-6.0386,-5.9418]}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="preguntas-frecuentes" class="section level2">
 <h2><span style="color:darkgreen"> Preguntas frecuentes: </span></h2>
 <ul>
-<li><p><em>¿Solo estáis actuando en el valle del Guadalquivir?</em> Como comunidad piloto, sí. Pero pronto empezaremos a generar documentación y recursos para poder auto-organizarse en otras regiones y estaremos encantados de echar una mano compartiendo nuestra experiencia.</p></li>
-<li><p><em>¿Qué ofrecéis exactamente?</em> Ofrecemos conocimiento e información para diseñar, y sobretodo, para evaluar el resultado de innovaciones de forma rigurosa. También podemos ofrecer recursos para implementar acciones co-diseñadas en la medida de nuestras posibilidades (pero no subsidios directos). Ofrecemos la potencia de un proyecto Europeo con voz en europa para hacer llegar tu voz a las personas que diseñan la futura política agraria europea.</p></li>
-<li><p><em>¿Y qué esperáis de los participantes exactamente?</em> Compartir conocimiento mediante talleres, entrevistas o cuestionarios cortos. Todos vamos muy ocupados, así que estos van a ser cortos y productivos. Si eres agricultor, buscamos 15 fincas que quieran involucrarse en realizar innovaciones basadas en la biodiversidad co-diseñadas con nosotros. También buscamos 15 fincas que no quieran hacer acciones específicas, pero nos dejen acceso para medir biodiversidad y producción. Todos los datos serán anonimizados.</p></li>
+<li><p><em>¿Solo estáis actuando en el valle del Guadalquivir?</em> Como
+comunidad piloto, sí. Pero pronto empezaremos a generar documentación y
+recursos para poder auto-organizarse en otras regiones y estaremos
+encantados de echar una mano compartiendo nuestra experiencia.</p></li>
+<li><p><em>¿Qué ofrecéis exactamente?</em> Ofrecemos conocimiento e
+información para diseñar, y sobretodo, para evaluar el resultado de
+innovaciones de forma rigurosa. También podemos ofrecer recursos para
+implementar acciones co-diseñadas en la medida de nuestras posibilidades
+(pero no subsidios directos). Ofrecemos la potencia de un proyecto
+Europeo con voz en europa para hacer llegar tu voz a las personas que
+diseñan la futura política agraria europea.</p></li>
+<li><p><em>¿Y qué esperáis de los participantes exactamente?</em>
+Compartir conocimiento mediante talleres, entrevistas o cuestionarios
+cortos. Todos vamos muy ocupados, así que estos van a ser cortos y
+productivos. Si eres agricultor, buscamos 15 fincas que quieran
+involucrarse en realizar innovaciones basadas en la biodiversidad
+co-diseñadas con nosotros. También buscamos 15 fincas que no quieran
+hacer acciones específicas, pero nos dejen acceso para medir
+biodiversidad y producción. Todos los datos serán anonimizados.</p></li>
 </ul>
 <hr />
-<p><img src="media/EUH2020.jpg" alt="logo" width="200"/> <img src="media/SHOWCASE.png" alt="logo" width="200"/><br />
+<p><img src="media/EUH2020.jpg" alt="logo" width="200"/>
+<img src="media/SHOWCASE.png" alt="logo" width="200"/><br />
 <strong>Con la colaboración de:</strong><br />
-<img src="media/AAS.png" alt="logo" width="200"/> <img src="media/Logo-EBD.jpg" alt="logo" width="200"/> <img src="media/plantpy.png" alt="logo" width="200"/> <img src="media/Anecoop.jpg" alt="logo" width="180"/> <img src="media/primor.jpeg" alt="logo" width="180"/> <img src="media/royal.png" alt="logo" width="180"/> <img src="media/sansebastian.jpg" alt="logo" width="180"/> <img src="media/alcafruit.jpg" alt="logo" width="180"/></p>
+<img src="media/AAS.png" alt="logo" width="200"/>
+<img src="media/Logo-EBD.jpg" alt="logo" width="200"/>
+<img src="media/plantpy.png" alt="logo" width="200"/>
+<img src="media/Anecoop.jpg" alt="logo" width="180"/>
+<img src="media/primor.jpeg" alt="logo" width="180"/>
+<img src="media/royal.png" alt="logo" width="180"/>
+<img src="media/sansebastian.jpg" alt="logo" width="180"/>
+<img src="media/alcafruit.jpg" alt="logo" width="180"/></p>
 </div>
 </div>
 

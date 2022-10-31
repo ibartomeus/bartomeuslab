@@ -13,7 +13,7 @@ Data is extracted from [Google Schoolar](https://scholar.google.com/citations?hl
 #install_github("pablobarbera/scholarnetwork")
 
 library(scholarnetwork)
-d <- extractNetwork(id="EXdyoWAAAAAJ", n=5000)
+d <- extractNetwork(id="EXdyoWAAAAAJ", n=1000)
 #str(d)
 #plotNetwork(d$nodes, d$edges, file="network.html")
 #head(d)
