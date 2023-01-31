@@ -41,32 +41,44 @@ map_leaflet(x = partners)
 - **Fijen**, T. 2020. Mass‐migrating bumblebees: An overlooked phenomenon with potential far‐reaching implications for bumblebee conservation. Journal of Applied Ecology. 00: 1– 7 [Link](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2664.13768)   
 - **Garibaldi**, LA, **Oddi**, FJ, Miguez, FE, **Bartomeus**, I, et al. Working landscapes need at least 20% native habitat. Conservation Letters. 2020;e12773. [Link](https://doi.org/10.1111/conl.12773)     
 - Zamorano, J., **Bartomeus**, I., Grez, A.A. and **Garibaldi**, L.A. (2020), Field margin floral enhancements increase pollinator diversity at the field edge but show no consistent spillover into the crop field: a meta‐analysis. Insect Conserv Divers, 13: 519-531. [Link](https://doi.org/10.1111/icad.12454)    
-- Blasi, **Bartomeus**, Bommarco, Gagic, Garratt, Holzschuh, **Kleijn**, Lindström, Olsson, Polce, Potts, Rundlöf, Scheper, Smith, Steffan-Dewenter, Clough. 2021. Evaluating predictive performance of models explaining wild bee pollinator abundance in a mass-flowering crops. In press.  [Link](https://onlinelibrary.wiley.com/doi/full/10.1111/ecog.05308)   
-- **Allen-Perkins**, **Magrach**, Dainese, **Garibaldi**, **Kleijn**, Rader, **Reilly**, **Winfree**, ... , **Bartomeus**. 2021. CropPol: A dynamic, open and global database on crop pollination [Link](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecy.3614)  
-- **Fijen** and **Wallis de Vries**. 2021. Kunnen vlindertellingen de stand van bijen en zweefvliegen voorspellen? [Link](https://natuurtijdschriften.nl/pub/1019335). 
-- **Magrach**, **Giménez-García**, **Allen-Perkins**, **Garibaldi**,  **Bartomeus**. 2022. Increasing crop richness and reducing field sizes provide higher yields to pollinator-dependent crops. [Link](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2664.14305)    
-- **Garibaldi LA**, Pérez‐Méndez N, Cordeiro GD, Hughes A, Orr M, Alves‐dos‐Santos I, Freitas BM, Freitas de Oliveira F, LeBuhn G, **Bartomeus I**, Aizen MA. 2021. Negative impacts of dominance on bee communities: Does the influence of invasive honey bees differ from native bees? [Link](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecy.3526)   
-*In prepration:*. 
-- **Fijen, T.P.M.**, **Nabaes Jodar**, **D, Garibaldi**, **L.A., Winfree**, R., Kostic, K, **Bartomeus, I**, **Kleijn, D**. Farmers and citizens value pollinators differently – a quantitative approach in four countries. In prep.
-- Turo K. J., **Reilly J. R.**, **Fjien, T.**, **Magrach A.**, **Giménez-García A.**, **Winfree R**. A global assessment of pollinator limitation in agriculture systems: Prevalence and risks. In prep.
-- **Hila Segre**, **David Kleijn**, **Ignasi Bartomeus**, **Michiel F. Wallis De Vries**, Mark de Jong, Maarten Frank van der Schee, Jacinto Román, **Thijs Fijen**. Butterflies are not a robust bioindicator for assessing pollinator communities. In prep.
-- **Virginia Domínguez-Garcia**, Francisco P. Molina, Oscar Godoy, **Ignasi Bartomeus**. Interaction network structure predicts species temporal persistence in empirical plant-pollinator communities (Submitted)
-- **Oddi**, **Magrach**, Márquez Torres, **Pompeu**, **Balbi**, **Villa**, **Garibaldi**. Plataformas de modelado de servicios ecosistémicos: el norte de lacPatagonia como un ejemplo de aplicación (Submitted)
-- **Angel Giménez-García**, **Alfonso Allen-Perkins**, **Ignasi Bartomeus**, **Stefano Balbi**, Jessica L Knapp, Violeta Hevia, Ben Alex Woodcock, Guy Smagghe, Marcos Miñarro, Maxime Eeraerts, Jonathan F. Colville, Juliana Hipólito, Pablo Cavigliasso, Guiomar Nates-Parra, José M. Herrera, Sarah Cusser, Benno I Simmons, Volkmar Wolters, Shalene Jha, Breno M. Freitas, Finbarr G. Horgan, Derek R. Artz, C. Sheena Sidhu, Mark Otieno, Virginie Boreux, David J. Biddinger, Alexandra-Maria Klein, Neelendra K. Joshi, Rebecca I A Stewart, Matthias Albrecht, Charlie C. Nicholson, Alison D. O?Reilly, Jessica Petsersen, David William Crowder, Katherine L.W. Burns, Diego Nicolás Nabaes Jodar, Lucas Alejandro Garibaldi, Louis Sutter, Yoko L. Dupont, Bo Dalsgaard, Jeferson Gabriel da Encarnação Coutinho, Amparo Lázaro, Georg K.S. Andersson, Nigel E. Raine, Smitha Krishnan, Matteo Dainese, Wopke van der Werf, Henrik Smith, and **Ainhoa Magrach**. Pollination supply models from local to global scale. (Submitted)
-- **Reilly, JR**, **Bartomeus, I**, **Simpson, D**, **Allen-Perkins, A**, **Garibaldi, L**, **Winfree, R**. Wild insects and honey bees are equally important to crop yields in a global analysis. (Submitted)
+- Blasi, **Bartomeus**, Bommarco, Gagic, Garratt, Holzschuh, **Kleijn**, Lindström, Olsson, Polce, Potts, Rundlöf, Scheper, Smith, Steffan-Dewenter, Clough. 2021. Evaluating predictive performance of models explaining wild bee pollinator abundance in a mass-flowering crops. Ecography, 44: 525-536. [Link](https://onlinelibrary.wiley.com/doi/full/10.1111/ecog.05308)   
+- **Allen-Perkins**, **Magrach**, Dainese, **Garibaldi**, **Kleijn**, Rader, **Reilly**, **Winfree**, ... , **Bartomeus**. 2021. CropPol: A dynamic, open and global database on crop pollination. Ecology 103( 3): e3614. [Link](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecy.3614)  
+- **Fijen** and **Wallis de Vries**. 2021. Kunnen vlindertellingen de stand van bijen en zweefvliegen voorspellen? Vlinders , Volume 36 - Issue 3 p. 14- 16 [Link](https://natuurtijdschriften.nl/pub/1019335)  
+- **Magrach**, **Giménez-García**, **Allen-Perkins**, **Garibaldi**,  **Bartomeus**. 2022. Increasing crop richness and reducing field sizes provide higher yields to pollinator-dependent crops. Journal of Applied Ecology, 60, 77– 90 [Link](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2664.14305)    
+- **Garibaldi LA**, Pérez‐Méndez N, Cordeiro GD, Hughes A, Orr M, Alves‐dos‐Santos I, Freitas BM, Freitas de Oliveira F, LeBuhn G, **Bartomeus I**, Aizen MA. 2021. Negative impacts of dominance on bee communities: Does the influence of invasive honey bees differ from native bees? Ecology 102( 12):e03526.  [Link](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecy.3526)   
+
+
+*In prepration:*    
+
+- **Fijen, T.P.M.**, **Nabaes Jodar**, **D, Garibaldi**, **L.A., Winfree**, R., Kostic, K, **Bartomeus, I**, **Kleijn, D**. Farmers and citizens value pollinators differently – a quantitative approach in four countries. In prep.  
+
+- Turo K. J., **Reilly J. R.**, **Fjien, T.**, **Magrach A.**, **Giménez-García A.**, **Winfree R**. A global assessment of pollinator limitation in agriculture systems: Prevalence and risks. In prep.  
+
+- **Hila Segre**, **David Kleijn**, **Ignasi Bartomeus**, **Michiel F. Wallis De Vries**, Mark de Jong, Maarten Frank van der Schee, Jacinto Román, **Thijs Fijen**. Butterflies are not a robust bioindicator for assessing pollinator communities. In prep.  
+
+- **Virginia Domínguez-Garcia**, Francisco P. Molina, Oscar Godoy, **Ignasi Bartomeus**. Interaction network structure predicts species temporal persistence in empirical plant-pollinator communities (Submitted). 
+
+- **Oddi**, **Magrach**, Márquez Torres, **Pompeu**, **Balbi**, **Villa**, **Garibaldi**. Plataformas de modelado de servicios ecosistémicos: el norte de lacPatagonia como un ejemplo de aplicación (Submitted).  
+
+- **Angel Giménez-García**, **Alfonso Allen-Perkins**, **Ignasi Bartomeus**, **Stefano Balbi**, Jessica L Knapp, Violeta Hevia, Ben Alex Woodcock, Guy Smagghe, Marcos Miñarro, Maxime Eeraerts, Jonathan F. Colville, Juliana Hipólito, Pablo Cavigliasso, Guiomar Nates-Parra, José M. Herrera, Sarah Cusser, Benno I Simmons, Volkmar Wolters, Shalene Jha, Breno M. Freitas, Finbarr G. Horgan, Derek R. Artz, C. Sheena Sidhu, Mark Otieno, Virginie Boreux, David J. Biddinger, Alexandra-Maria Klein, Neelendra K. Joshi, Rebecca I A Stewart, Matthias Albrecht, Charlie C. Nicholson, Alison D. O?Reilly, Jessica Petsersen, David William Crowder, Katherine L.W. Burns, Diego Nicolás Nabaes Jodar, Lucas Alejandro Garibaldi, Louis Sutter, Yoko L. Dupont, Bo Dalsgaard, Jeferson Gabriel da Encarnação Coutinho, Amparo Lázaro, Georg K.S. Andersson, Nigel E. Raine, Smitha Krishnan, Matteo Dainese, Wopke van der Werf, Henrik Smith, and **Ainhoa Magrach**. Pollination supply models from local to global scale. (Submitted)   
+
+- **Reilly, JR**, **Bartomeus, I**, **Simpson, D**, **Allen-Perkins, A**, **Garibaldi, L**, **Winfree, R**. Wild insects and honey bees are equally important to crop yields in a global analysis. (Submitted).  
+
 - **Nabaes Jodar D. N.**, Hipólito J., Zaragoza-Trello C., Oliveira da Silva F., Magalhaes-Freitas B., Viana B., Blande N., Souza T., Pires C., Velado-Alonso E., **Bartomeus I.**, **Garibaldi L. A.** (2023). Biodiversity-inclusive agricultural practices and their dependence on farmer characteristics in South America. (In prep)
+
+- **Oddi** et al. TBA [scenarios]. In prep.   
 
 
 ## News  
 
 * The [Open Library of Pollination Models](https://observ.integratedmodelling.org/modeler/?app=observ_app#/login ) is in beta version!  
-* Ignasi Bartomeus presents CropPol at [FAO meeting](http://aims.fao.org/RDA_IGAD_AnnualMeeting2022).  
-* Several members of OBServ presented thier work at ESA2022 in Montreal, Canada.  
-* [Twitter chat](https://wakelet.com/wake/FgcLUM2b_fYkon5QvGufu) about pollination services
-* Our 2020 anual meeting was all virtual due to the pandemic, but it was a success!
-* We are launching a **[Global Crop Pollintion Database](croppollination.html)**
-* OBServ was highly represented at [ECOFLOR 2020](https://ecoflor2020.weebly.com/)
-* See a demo of the amaizing kLab environemnt that we will be using: [link](https://www.youtube.com/watch?v=vsWGkMBpI9Y&feature=youtu.be)  
+* Several members of OBServ presented thier work at ESA2022 in Montreal, Canada.   
+* Ignasi Bartomeus presents CropPol at [FAO meeting](http://aims.fao.org/RDA_IGAD_AnnualMeeting2022).    
+* [Twitter chat](https://wakelet.com/wake/FgcLUM2b_fYkon5QvGufu) about pollination services.  
+* Our 2020 anual meeting was all virtual due to the pandemic, but it was a success!   
+* We are launching a **[Global Crop Pollintion Database](croppollination.html)**   
+* OBServ was highly represented at [ECOFLOR 2020](https://ecoflor2020.weebly.com/)    
+* See a demo of the amaizing kLab environemnt that we will be using: [link](https://www.youtube.com/watch?v=vsWGkMBpI9Y&feature=youtu.be)    
 * Group photo of our kick-off meeting:  
 <img src="media/OBServ_foto.jpg" alt="logo" width="200"/>  
 _Featuring Rachael Winfree, James Rilley, Ignasi Bartomeus, Ainhoa Magrach, Ferdinando Villa, David Kleijn, Lucas Garibaldi and Thijs Fijen._  
