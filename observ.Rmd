@@ -54,13 +54,13 @@ map_leaflet(x = partners)
 
 - Turo K. J., **Reilly J. R.**, **Fjien, T.**, **Magrach A.**, **Giménez-García A.**, **Winfree R**. A global assessment of pollinator limitation in agriculture systems: Prevalence and risks. In prep.  
 
-- **Hila Segre**, **David Kleijn**, **Ignasi Bartomeus**, **Michiel F. Wallis De Vries**, Mark de Jong, Maarten Frank van der Schee, Jacinto Román, **Thijs Fijen**. Butterflies are not a robust bioindicator for assessing pollinator communities. In prep.  
+- **Segre**, **Kleijn**, **Bartomeus**, **Wallis De Vries**, de Jong, van der Schee, Román, **Fijen**. Butterflies are not a robust bioindicator for assessing pollinator communities. In prep.  
 
-- **Virginia Domínguez-Garcia**, Francisco P. Molina, Oscar Godoy, **Ignasi Bartomeus**. Interaction network structure predicts species temporal persistence in empirical plant-pollinator communities (Submitted). 
+- **Domínguez-Garcia**, Molina, Godoy, ** Bartomeus**. Interaction network structure predicts species temporal persistence in empirical plant-pollinator communities (Submitted). 
 
 - **Oddi**, **Magrach**, Márquez Torres, **Pompeu**, **Balbi**, **Villa**, **Garibaldi**. Plataformas de modelado de servicios ecosistémicos: el norte de lacPatagonia como un ejemplo de aplicación (Submitted).  
 
-- **Angel Giménez-García**, **Alfonso Allen-Perkins**, **Ignasi Bartomeus**, **Stefano Balbi**, Jessica L Knapp, Violeta Hevia, Ben Alex Woodcock, Guy Smagghe, Marcos Miñarro, Maxime Eeraerts, Jonathan F. Colville, Juliana Hipólito, Pablo Cavigliasso, Guiomar Nates-Parra, José M. Herrera, Sarah Cusser, Benno I Simmons, Volkmar Wolters, Shalene Jha, Breno M. Freitas, Finbarr G. Horgan, Derek R. Artz, C. Sheena Sidhu, Mark Otieno, Virginie Boreux, David J. Biddinger, Alexandra-Maria Klein, Neelendra K. Joshi, Rebecca I A Stewart, Matthias Albrecht, Charlie C. Nicholson, Alison D. O?Reilly, Jessica Petsersen, David William Crowder, Katherine L.W. Burns, Diego Nicolás Nabaes Jodar, Lucas Alejandro Garibaldi, Louis Sutter, Yoko L. Dupont, Bo Dalsgaard, Jeferson Gabriel da Encarnação Coutinho, Amparo Lázaro, Georg K.S. Andersson, Nigel E. Raine, Smitha Krishnan, Matteo Dainese, Wopke van der Werf, Henrik Smith, and **Ainhoa Magrach**. Pollination supply models from local to global scale. (Submitted)   
+- **Giménez-García**, **Allen-Perkins**, **Bartomeus**, **Balbi**, Knapp, Hevia, Woodcock, Smagghe, Miñarro, Eeraerts, Colville,  Hipólito, Cavigliasso, Nates-Parra, Herrera, Cusser, Simmons,  Wolters, Jha, Freitas, Horgan, Artz, Sidhu, Otieno, Boreux, Biddinger, Klein, Joshi, Stewart, Albrecht, Nicholson, O'Reilly,  Petsersen, Crowder, Burns, Nabaes Jodar, Garibaldi, Sutter, Dupont, Dalsgaard, da Encarnação Coutinho, Lázaro, Andersson, Raine, Krishnan, Dainese, van der Werf, Smith, and **Magrach**. Pollination supply models from local to global scale. (Submitted)   
 
 - **Reilly, JR**, **Bartomeus, I**, **Simpson, D**, **Allen-Perkins, A**, **Garibaldi, L**, **Winfree, R**. Wild insects and honey bees are equally important to crop yields in a global analysis. (Submitted).  
 
