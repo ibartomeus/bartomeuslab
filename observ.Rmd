@@ -56,7 +56,7 @@ map_leaflet(x = partners)
 
 - **Segre**, **Kleijn**, **Bartomeus**, **Wallis De Vries**, de Jong, van der Schee, Román, **Fijen**. Butterflies are not a robust bioindicator for assessing pollinator communities. In prep.  
 
-- **Domínguez-Garcia**, Molina, Godoy, ** Bartomeus**. Interaction network structure predicts species temporal persistence in empirical plant-pollinator communities (Submitted). 
+- **Domínguez-Garcia**, Molina, Godoy, **Bartomeus**. Interaction network structure predicts species temporal persistence in empirical plant-pollinator communities (Submitted). 
 
 - **Oddi**, **Magrach**, Márquez Torres, **Pompeu**, **Balbi**, **Villa**, **Garibaldi**. Plataformas de modelado de servicios ecosistémicos: el norte de lacPatagonia como un ejemplo de aplicación (Submitted).  
 
